@@ -22,3 +22,7 @@ Route::get('/maps', function () {
     return view('maps');
 }); 
 
+Route::get('/spa', function () {
+    return view('spa');
+}); 
+
