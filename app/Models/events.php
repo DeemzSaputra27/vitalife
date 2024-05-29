@@ -5,7 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class events extends Model
+class Event extends Model
 {
     use HasFactory;
+
+    protected $table = 'events';
+    protected $primaryKey = 'id_event';
+    public $timestamps = true;
+
+    protected $fillable = [
+        'nama',
+        'harga',
+        'alamat',
+        'noHP'
+    ];
 }
