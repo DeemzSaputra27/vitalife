@@ -10,6 +10,53 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
+  {{-- NEW --}}
+
+  <div class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="bg-white rounded-lg shadow-md p-6 w-full max-w-md">
+      <div class="flex items-center mb-4">
+        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+          <img src="https://via.placeholder.com/150" alt="Profile Image" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <h2 class="text-xl font-bold">Endang Soekanti</h2>
+          <p class="text-gray-500">Psikologi Klinis, Hospital UGM Yogyakarta</p>
+          <p class="text-gray-500">Yogyakarta, Sleman</p>
+        </div>
+      </div>
+  
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <input type="radio" name="location" value="di-yogyakarta" class="mr-2" checked>
+          <label for="di-yogyakarta">Di Yogyakarta</label>
+        </div>
+        <div class="flex items-center">
+          <input type="radio" name="location" value="jawa-timur" class="mr-2">
+          <label for="jawa-timur">Jawa Timur</label>
+        </div>
+        <div class="flex items-center">
+          <input type="radio" name="location" value="jawa-tengah" class="mr-2">
+          <label for="jawa-tengah">Jawa Tengah</label>
+        </div>
+        <div class="flex items-center">
+          <input type="radio" name="location" value="jawa-barat" class="mr-2">
+          <label for="jawa-barat">Jawa Barat</label>
+        </div>
+        <div class="flex items-center">
+          <input type="radio" name="location" value="jakarta" class="mr-2">
+          <label for="jakarta">Jakarta</label>
+        </div>
+      </div>
+  
+      <div class="mt-6">
+        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full">
+          Make promise
+        </button>
+      </div>
+    </div>
+  </div>
+
+
     <section class="ezy__careers13 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
         <div class="container px-4">
           <div class="grid grid-cols-12">
