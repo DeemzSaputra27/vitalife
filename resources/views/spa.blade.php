@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body>
+<body class=" bg-blue-100">
   <x-navbar2></x-navbar2>
-  <main>
+  <main class="mt-16">
     <div class="bg-gray flex justify-center items-center">
       <div class="bg-gray-100 rounded-2xl shadow-lg w-full max-w-4xl p-8">
         <div class="flex justify-between items-center mb-6">
@@ -58,7 +58,63 @@
             </select>
           </div>
         </div>
-
+      </div>
+    </div>
+    
+    {{-- Mansion SPA --}}
+    <div class=" font-sans">
+      <div class="container mx-auto py-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
+            <div>
+              <h2 class="text-lg font-bold">MANSION SPA JOGJA</h2>
+              <p class="text-gray-500">Relaxation</p>
+              <p class="text-gray-500">16 years experience overall</p>
+            </div>
+          </div>
+          <div class="mt-4 bg-green-100 px-4 py-2 rounded-md inline-flex items-center">
+            <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            <span class="text-green-500 font-medium">99% 93 Patient Stories</span>
+          </div>
+          <div class="mt-4">
+            <p class="text-gray-500">Kec. Gamping, Kabupaten Sleman, DIY</p>
+            <p class="text-gray-500">The most famous relaxation spa</p>
+            <a href="#" class="text-blue-500 hover:text-blue-700">more</a>
+          </div>
+          <div class="mt-4">
+            <p class="text-gray-500">FREE &#8377;500 Consultation fee at clinic</p>
+          </div>
+          <div class="mt-4">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Book FREE Spa Visit
+            </button>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-lg font-bold">Available Today</h3>
+            <div class="grid grid-cols-3 gap-4 mt-4">
+              <div>
+                <p class="text-gray-500">Morning</p>
+                <p class="font-medium">11:30 AM</p>
+              </div>
+              <div>
+                <p class="text-gray-500">Afternoon</p>
+                <p class="font-medium">12:00 PM</p>
+                <p class="font-medium">12:30 PM</p>
+                <p class="font-medium">01:30 PM</p>
+                <p class="font-medium">02:00 PM</p>
+                <p class="font-medium">02:30 PM</p>
+              </div>
+              <div>
+                <p class="text-gray-500">Evening</p>
+                <p class="font-medium">06:00 PM</p>
+                <p class="font-medium">06:30 PM</p>
+                <p class="font-medium">07:00 PM</p>
+                <p class="font-medium">07:30 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
