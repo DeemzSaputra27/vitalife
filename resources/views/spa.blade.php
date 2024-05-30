@@ -18,28 +18,47 @@
           <div class="bg-gray-100 border-none rounded-md py-2 px-4 text-sm">
             <input type="text" name="location" id="location" class="block w-full rounded-md border-0 py-1.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" placeholder="Set your location">
           </div>
-          <div class="flex items-center mr-20">
-            <input type="text" class="bg-gray-100 border-none rounded-md py-2 px-4 text-sm" placeholder="Specialization" />
+          <div class="bg-gray-100 border-none rounded-md py-2 px-4 text-sm">
+            <input type="text" class="block w-full rounded-md border-0 py-1.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" placeholder="Specialization" />
           </div>
           <div class="flex items-center">
             <button class="bg-blue-600 text-white rounded-md py-2 px-4 text-sm">Search</button>
           </div>
         </div>
+        
+        
+        {{-- new --}}
         <div class="flex justify-start mb-6">
-          <div class="flex items-center space-x-2 ">
-            <span class="text-sm text-gray-600">Availability</span>
-            <button class="text-blue-600 text-sm">▼</button>
+          <div class="flex items-center space-x-2">
+            <div class="input-group">
+              <select type="inputWay" class="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline">
+                <option selected>Availability</option>
+                <option>One Way</option>
+                <option>Multiple Way</option>
+              </select>
+            </div>
           </div>
           <div class="flex items-center space-x-2 ml-6">
-            <span class="text-sm text-gray-600">Filter</span>
-            <button class="text-blue-600 text-sm">▼</button>
+            <select type="passengers" class="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline">
+              <option selected>Filter</option>
+              <option>1 Filters</option>
+              <option>2 Filters</option>
+              <option>3 Filters</option>
+              <option>4 Filters</option>
+              <option>5 Filters</option>
+            </select>
           </div>
           <div class="flex items-center space-x-2 ml-6">
-            <span class="text-sm text-gray-600">Sort By</span>
-            <button class="text-blue-600 text-sm">Relevance ▼</button>
+            <span class="text-black-500">Sort By</span>
+            <select type="sort" class="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline">
+              <option selected>Relevance</option>
+              <option>Business</option>
+              <option>Economy</option>
+              <option>1st Class</option>
+            </select>
           </div>
         </div>
-        <!-- Add doctor cards here -->
+
       </div>
     </div>
   </main>

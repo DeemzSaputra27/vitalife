@@ -6,18 +6,24 @@
             </div>
             <div class="hidden md:block">
                 <div class="ml-4 flex items-center md:ml-6">
-                    <ul class="flex space-x-4">
+                    <ul class="flex space-x-2">
                         <li>
                             <a href="#" class="px-4 opacity-100">Home</a>
                         </li>
                         <li>
-                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Services</a>
+                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Find Spa</a>
                         </li>
                         <li>
-                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Why us?</a>
+                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Find Yoga</a>
                         </li>
                         <li>
-                            <a href="#" class="px-4 opacity-50 hover:opacity-100">How It Works</a>
+                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Event</a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Spesialisation</a>
+                        </li>
+                        <li>
+                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Voucher</a>
                         </li>
                     </ul>
                     <div class="relative ml-20">
