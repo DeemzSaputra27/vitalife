@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="mt-8 text-gray-400">
-        <p>&copy; 2023 Vitalife. All rights reserved.</p>
+        <p>&copy; 2024 Vitalife. All rights reserved.</p>
       </div>
     </div>
   </footer>
