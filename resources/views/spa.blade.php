@@ -191,6 +191,35 @@
     </div>
     
 
+    <div class="flex items-center justify-center h-screen bg-gray-100">
+      <div class="bg-white shadow-lg rounded-lg w-full max-w-md p-6">
+        <div class="flex items-center">
+          <img src="mansion-spa-jogja.png" alt="Mansion Spa Jogja" class="w-20 h-20 rounded-full mr-4">
+          <div>
+            <h3 class="text-lg font-bold">MANSION SPA JOGJA</h3>
+            <p class="text-gray-500 text-sm">Relaxation</p>
+            <p class="text-gray-500 text-sm">16 years experience overall</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <p class="text-gray-500">Mc. Gramphs, Kebutuhan Stamen, DIY<br>The most famous relaxation spa more</p>
+          <p class="text-gray-500 mt-2">FREE Rp50 Consultation fee at clinic</p>
+        </div>
+        <div class="flex items-center justify-between mt-4">
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-1" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-green-500 font-bold">99%</span>
+            <span class="text-gray-500 ml-1">93 Patient Stories</span>
+          </div>
+          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            Book FREE Spa Visit
+          </button>
+        </div>
+      </div>
+    </div>
+
   </main>
   
   <div class="container mx-auto py-8">
