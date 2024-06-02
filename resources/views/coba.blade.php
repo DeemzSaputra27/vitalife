@@ -580,3 +580,196 @@
 </body>
 
 </html>
+
+{{-- 
+              <section
+              class="ezy__blog13 py-14 md:py-24 text-stone-800 bg-white dark:bg-[#0b1727] dark:text-white overflow-hidden"
+            >
+              <div class="container px-8 md:px-24">
+                <div class="grid grid-cols-1">
+                  <div class="col-span-1">
+                    <h1 class="text-2xl md:text-[45px] leading-none font-bold">
+                      Our Recent Blogs
+                    </h1>
+                  </div>
+            
+                  <div class="col-span-1">
+                    <div class="grid grid-cols-6 gap-x-6">
+                      <!-- card item -->
+                      <div class="col-span-6 md:col-span-3 lg:col-span-2">
+                        <div
+                          class="mt-6 md:mt-12 bg-gray-100 dark:bg-[#1E2735] rounded-xl overflow-hidden"
+                        >
+                          <div class="relative">
+                            <img
+                              src="https://cdn.easyfrontend.com/pictures/blog/blog_11_1.png"
+                              alt=""
+                              class="w-full"
+                            />
+                            <img
+                              class="absolute -bottom-6 left-6 w-12 h-12 rounded-full"
+                              src="https://cdn.easyfrontend.com/pictures/instructor/instructor_2_3.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="p-6 pb-8">
+                            <a href="" class="hover:text-blue-600">
+                              <h5 class="text-[19px] font-medium leading-6 mt-3 mb-3">
+                                How to pitch a video game: 7 tips for pitching a video
+                                game
+                              </h5>
+                            </a>
+                            <p class="text-[17px] leading-none opacity-80 mb-5">
+                              August 10th, 2022
+                            </p>
+                            <p class="opacity-80 mb-6">
+                              Some quick example text to build on the card title and
+                              make up the bulk of the card's content.
+                            </p>
+                            <a
+                              href="#"
+                              class="bg-transparent hover:bg-blue-600 border border-blue-600 hover:text-white rounded transition text-sm py-2.5 px-6 mb-2"
+                              >Read More</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card item -->
+                      <div class="col-span-6 md:col-span-3 lg:col-span-2">
+                        <div
+                          class="mt-6 md:mt-12 bg-gray-100 dark:bg-[#1E2735] rounded-xl overflow-hidden"
+                        >
+                          <div class="relative">
+                            <img
+                              src="https://cdn.easyfrontend.com/pictures/blog/blog_11_2.png"
+                              alt=""
+                              class="w-full"
+                            />
+                            <img
+                              class="absolute -bottom-6 left-6 w-12 h-12 rounded-full"
+                              src="https://cdn.easyfrontend.com/pictures/instructor/instructor_2_3.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="p-6 pb-8">
+                            <a href="" class="hover:text-blue-600">
+                              <h5 class="text-[19px] font-medium leading-6 mt-3 mb-3">
+                                How to pitch a video game: 7 tips for pitching a video
+                                game
+                              </h5>
+                            </a>
+                            <p class="text-[17px] leading-none opacity-80 mb-5">
+                              August 10th, 2022
+                            </p>
+                            <p class="opacity-80 mb-6">
+                              Some quick example text to build on the card title and
+                              make up the bulk of the card's content.
+                            </p>
+                            <a
+                              href="#"
+                              class="bg-transparent hover:bg-blue-600 border border-blue-600 hover:text-white rounded transition text-sm py-2.5 px-6 mb-2"
+                              >Read More</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card item -->
+                      <div class="col-span-6 md:col-span-3 lg:col-span-2">
+                        <div
+                          class="mt-6 md:mt-12 bg-gray-100 dark:bg-[#1E2735] rounded-xl overflow-hidden"
+                        >
+                          <div class="relative">
+                            <img
+                              src="https://cdn.easyfrontend.com/pictures/blog/blog_11_3.png"
+                              alt=""
+                              class="w-full"
+                            />
+                            <img
+                              class="absolute -bottom-6 left-6 w-12 h-12 rounded-full"
+                              src="https://cdn.easyfrontend.com/pictures/instructor/instructor_2_3.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="p-6 pb-8">
+                            <a href="" class="hover:text-blue-600">
+                              <h5 class="text-[19px] font-medium leading-6 mt-3 mb-3">
+                                How to pitch a video game: 7 tips for pitching a video
+                                game
+                              </h5>
+                            </a>
+                            <p class="text-[17px] leading-none opacity-80 mb-5">
+                              August 10th, 2022
+                            </p>
+                            <p class="opacity-80 mb-6">
+                              Some quick example text to build on the card title and
+                              make up the bulk of the card's content.
+                            </p>
+                            <a
+                              href="#"
+                              class="bg-transparent hover:bg-blue-600 border border-blue-600 hover:text-white rounded transition text-sm py-2.5 px-6 mb-2"
+                              >Read More</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+            
+                      <div class="col-span-6 text-center">
+                        <button
+                          class="bg-transparent hover:bg-blue-600 border border-blue-600 hover:text-white rounded transition text-blue-600 py-3 px-7 mt-12"
+                        >
+                          Read More
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+ --}}
+            {{-- <section
+  class="ezy__contact6 light py-14 md:py-24 text-zinc-900 dark:text-white bg-cover bg-center bg-no-repeat overflow-hidden"
+  style="background-image: url(https://cdn.easyfrontend.com/pictures/contact/contact_6.svg)"
+>
+  <div class="container px-4">
+    <div class="grid grid-cols-12 py-6 lg:gap-8">
+      <div class="col-span-12 lg:col-span-7 mb-4 lg:mb-0"></div>
+      <div class="col-span-12 lg:col-span-5">
+        <div class="bg-white dark:bg-[#162231] shadow-xl rounded-2xl p-6 md:p-12">
+          <h2 class="text-2xl md:text-[45px] leading-none font-bold mb-4">Contact Us</h2>
+          <p class="text-lg mb-12">We list your menu online, help you process orders.</p>
+
+          <form class="">
+            <div class="mb-4">
+              <input
+                type="text"
+                class="min-h-[48px] leading-[48px] bg-[#F2F6FD] dark:bg-[#2A384C] border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full px-5"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="email"
+                class="min-h-[48px] leading-[48px] bg-[#F2F6FD] dark:bg-[#2A384C] border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full px-5"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div class="mb-4">
+              <textarea
+                name="message"
+                class="min-h-[48px] leading-[48px] bg-[#F2F6FD] dark:bg-[#2A384C] border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full px-5"
+                placeholder="Enter Message"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="bg-blue-600 hover:bg-opacity-90 text-white px-8 py-3 rounded mb-4">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ --}}
