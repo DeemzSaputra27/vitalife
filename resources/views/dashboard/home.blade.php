@@ -17,7 +17,7 @@
       <x-navbar></x-navbar>
 
         <main>
-            <div class="bg-biru mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+          <div class="bg-biru mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
                 <div class="pt-5">
                   <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
                     <!--Left Col-->
