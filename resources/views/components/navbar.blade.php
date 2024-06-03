@@ -5,7 +5,6 @@
                 <img class="h-10 w-25" src="../image/LOGO_2.png" alt="Your Company">
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                         <div class="flex rounded-full overflow-hidden shadow-sm">
                             <div class="relative flex-grow focus-within:z-10">
                                 <input type="text" name="price" id="price"
