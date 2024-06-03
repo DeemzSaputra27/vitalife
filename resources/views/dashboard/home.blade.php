@@ -346,14 +346,10 @@
                     </div>
                 </div>
             </div>
-
         </main>
-
         <x-footer></x-footer>
     </div>
   {{-- @endsection --}}
-
-
 </body>
 
 </html> 
