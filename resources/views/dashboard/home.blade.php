@@ -342,7 +342,7 @@
                                 <dt class="text-base leading-7 text-gray-300">Paid time off</dt>
                                 <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Unlimited</dd>
                             </div>
-                        </dl>
+                        </div>
                     </div>
                 </div>
             </div>
