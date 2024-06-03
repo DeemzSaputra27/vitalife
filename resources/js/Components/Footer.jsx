@@ -63,7 +63,7 @@ function FooterSection({ title, links }) {
     <div>
       <h3 className="text-lg font-bold mb-4">{title}</h3>
       <ul className="space-y-2">
-        {links.map(link => (
+        {links.nest(link => (
           <li key={link.text}>
             <a href={link.href} className="hover:text-gray-400">{link.text}</a>
           </li>
