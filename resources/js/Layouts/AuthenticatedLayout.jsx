@@ -16,7 +16,7 @@ export default function Authenticated({ user, header, children }) {
                     <div className="flex justify-between h-16">
                         <div className="flex">
                             <div className="shrink-0 flex items-center">
-                                <Link href="/">
+                                <Link>
                                     <img
                                         class="h-10 w-25"
                                         src="../image/LOGO_2.png"
