@@ -29,6 +29,24 @@ export default function Login({ status, canResetPassword }) {
     return (
         <GuestLayout className="grid grid-cols-2 gap-4">
             <Head title="Log in" />
+            <div className="text-center mb-6 lg:mb-12">
+                <div className="bg-blue-50 dark:bg-slate-700 w-64 flex justify-center mx-auto rounded-xl p-2">
+
+                    <Link href={route('login')} className="py-3 w-1/2 h-full bg-white dark:bg-slate-800 text-black dark:text-white rounded-xl">
+                        <button>
+                            Sign In
+                        </button>
+                    </Link>
+                    <Link href={route('register')} className="py-3 w-1/2 h-full opacity-60">
+                        <button>
+                            Sign Up
+                        </button>
+                    </Link>
+                </div>
+            </div>
+            <h2 className="text-center text-indigo-900 dark:text-white text-2xl font-bold mb-3">
+                Welcome to Vitalife
+            </h2>
             <section>
                 <div className="col-start-1 p-8 lg:p-10">
                     <h2 className="text-3xl leading-none font-bold mb-12">
