@@ -8,10 +8,10 @@
 </head>
 <body>
     
-    <section
+  <section
   class="ezy__travel1 light"
   style="background-image: url(https://cdn.easyfrontend.com/pictures/hero/header35-img.png)"
->
+  >
   <div class="container">
     <div class="row">
       <div class="col-12">
