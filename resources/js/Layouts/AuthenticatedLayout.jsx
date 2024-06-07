@@ -43,7 +43,28 @@ export default function Authenticated({ user, header, children }) {
                                         </div>
                                         <div class="flex-grow-2"></div>
                                     </div>
+                                    <ul class="flex space-x-2">
+                                        <li>
+                                            <a href="#" class="px-4 opacity-100">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Find Spa</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Find Yoga</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Event</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Spesialisation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Voucher</a>
+                                        </li>
+                                    </ul>
                                 </NavLink>
+
                             </div>
                         </div>
 

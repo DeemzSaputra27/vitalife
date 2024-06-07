@@ -26,7 +26,6 @@
           </div>
         </div>
         
-        
         {{-- new --}}
         <div class="flex justify-start mb-6">
           <div class="flex items-center space-x-2">
@@ -167,8 +166,6 @@
       </div>
     </div>
     
-    
-
     <div class="flex items-center justify-center h-screen bg-gray-100">
       <div class="bg-white shadow-lg rounded-lg w-full max-w-md p-6">
         <div class="flex items-center">

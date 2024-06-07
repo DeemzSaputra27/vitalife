@@ -79,16 +79,18 @@ function Dashboard({ auth }) {
                 <div class="p-20 text-center flex flex-col items-center">
                     <h2 class="text-4xl font-bold mb-8">Wellness Support</h2>
                     <div class="flex space-x-20">
-                        <a href="#spa" class="flex-shrink-0 ml-8 mr-0 group">
-                            <div class="relative p-4 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
-                                <img
-                                    src="../image/spa.png"
-                                    alt="spa"
-                                    class="h-32 mb-5"
-                                />
-                                <p class="text-lg font-bold">SPA</p>
-                            </div>
-                        </a>
+                        <Link href={route("spa")}>
+                            <a class="flex-shrink-0 ml-8 mr-0 group">
+                                <div class="relative p-4 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
+                                    <img
+                                        src="../image/spa.png"
+                                        alt="spa"
+                                        class="h-32 mb-5"
+                                    />
+                                    <p class="text-lg font-bold">SPA</p>
+                                </div>
+                            </a>
+                        </Link>
                         <div class="flex-shrink-0 w-16"></div>
                         <a href="#yoga" class="flex-shrink-0 ml-8 mr-0 group">
                             <div class="relative p-4 group-hover:shadow-md rounded-lg  group-hover:border-gray-500 group-hover:rounded-lg">

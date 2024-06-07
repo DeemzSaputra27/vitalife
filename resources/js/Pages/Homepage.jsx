@@ -1,7 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
 import { Link } from '@inertiajs/inertia-react';
-=======
 import { Link, Head } from '@inertiajs/react';
 
 export default function Homepage({ auth, laravelVersion, phpVersion }) {
