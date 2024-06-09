@@ -26,204 +26,159 @@ function spa({ auth }) {
     ]);
 
     return (
-        <GuestLayout>
+        <AuthenticatedLayout user={auth.user} header={<h1>Spa</h1>}>
             <Head title="spa" />
             <main>
                 <div className="bg-gray flex justify-center items-center">
-                    <div className="bg-gray-100 rounded-2xl shadow-lg w-full max-w-4xl p-8">
-                        <div className="flex justify-between items-center mb-6">
-                            <div className="bg-gray-100 border-none rounded-md py-2 px-4 text-sm">
-                                <input
-                                    type="text"
-                                    name="location"
-                                    id="location"
-                                    class="block w-full rounded-md border-0 py-1.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset"
-                                    placeholder="Set your location"
-                                />
+                    <div className="bg-gray flex justify-center items-center">
+                        <div className="bg-gray-100 rounded-2xl shadow-lg w-full max-w-4xl p-8">
+                            <div className="flex justify-between items-center mb-6">
+                                <div className="bg-gray-100 border-none rounded-md py-2 px-4 text-sm">
+                                    <input
+                                        type="text"
+                                        name="location"
+                                        id="location"
+                                        className="block w-full rounded-md border-0 py-1.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset"
+                                        placeholder="Set your location"
+                                    />
+                                </div>
+                                <div className="bg-gray-100 border-none rounded-md py-2 px-4 text-sm">
+                                    <input
+                                        type="text"
+                                        className="block w-full rounded-md border-0 py-1.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset"
+                                        placeholder="Specialization"
+                                    />
+                                </div>
+                                <div className="flex items-center">
+                                    <button className="bg-blue-600 text-white rounded-md py-2 px-4 text-sm">
+                                        Search
+                                    </button>
+                                </div>
                             </div>
-                            <div className="bg-gray-100 border-none rounded-md py-2 px-4 text-sm">
-                                <input
-                                    type="text"
-                                    class="block w-full rounded-md border-0 py-1.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset"
-                                    placeholder="Specialization"
-                                />
-                            </div>
-                            <div className="flex items-center">
-                                <button class="bg-blue-600 text-white rounded-md py-2 px-4 text-sm">
-                                    Search
-                                </button>
-                            </div>
-                        </div>
 
-                        {/* new */}
-                        <div className="flex justify-start mb-6">
-                            <div className="flex items-center space-x-2">
-                                <div class="input-group">
+                            <div className="flex justify-start mb-6">
+                                <div className="flex items-center space-x-2">
+                                    <div className="input-group">
+                                        <select
+                                            type="inputWay"
+                                            className="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline"
+                                        >
+                                            <option selected>Availability</option>
+                                            <option>One Way</option>
+                                            <option>Multiple Way</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div className="flex items-center space-x-2 ml-6">
                                     <select
-                                        type="inputWay"
-                                        class="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline"
+                                        type="passengers"
+                                        className="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline"
                                     >
-                                        <option selected>Availability</option>
-                                        <option>One Way</option>
-                                        <option>Multiple Way</option>
+                                        <option selected>Filter</option>
+                                        <option>1 Filters</option>
+                                        <option>2 Filters</option>
+                                        <option>3 Filters</option>
+                                        <option>4 Filters</option>
+                                        <option>5 Filters</option>
+                                    </select>
+                                </div>
+                                <div className="flex items-center space-x-2 ml-6">
+                                    <span className="text-black-500">Sort By</span>
+                                    <select
+                                        type="sort"
+                                        className="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline"
+                                    >
+                                        <option selected>Relevance</option>
+                                        <option>Business</option>
+                                        <option>Economy</option>
+                                        <option>1st Class</option>
                                     </select>
                                 </div>
                             </div>
-                            <div className="flex items-center space-x-2 ml-6">
-                                <select
-                                    type="passengers"
-                                    class="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline"
-                                >
-                                    <option selected>Filter</option>
-                                    <option>1 Filters</option>
-                                    <option>2 Filters</option>
-                                    <option>3 Filters</option>
-                                    <option>4 Filters</option>
-                                    <option>5 Filters</option>
-                                </select>
-                            </div>
-                            <div className="flex items-center space-x-2 ml-6">
-                                <span class="text-black-500">Sort By</span>
-                                <select
-                                    type="sort"
-                                    class="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline"
-                                >
-                                    <option selected>Relevance</option>
-                                    <option>Business</option>
-                                    <option>Economy</option>
-                                    <option>1st Class</option>
-                                </select>
-                            </div>
                         </div>
-                    </div>
 
-                    {/* spa 2 */}
-                    <div className="flex justify-center items-center">
-                        <div class="font-sans">
-                            <div class="container mx-auto py-8 grid grid-cols-2 gap-5">
-                                <div class="bg-white rounded-lg shadow-2xl p-12">
-                                    <div class="flex items-center">
-                                        <div class="w-16 h-16 rounded-full bg-gray-200 mr-6"></div>
-                                        <div>
-                                            <h2 class="text-2xl font-bold">
-                                                MANSION SPA JOGJA
-                                            </h2>
-                                            <p class="text-gray-500 text-lg">
-                                                Relaxation
-                                            </p>
-                                            <p class="text-gray-500 text-lg">
-                                                16 years experience overall
-                                            </p>
+                        <div className="flex justify-center items-center">
+                            <div className="font-sans">
+                                <div className="container mx-auto py-8 grid grid-cols-2 gap-5">
+                                    <div className="bg-white rounded-lg shadow-2xl p-12">
+                                        <div className="flex items-center">
+                                            <div className="w-16 h-16 rounded-full bg-gray-200 mr-6"></div>
+                                            <div>
+                                                <h2 className="text-2xl font-bold">MANSION SPA JOGJA</h2>
+                                                <p className="text-gray-500 text-lg">Relaxation</p>
+                                                <p className="text-gray-500 text-lg">16 years experience overall</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mt-6 bg-green-100 px-6 py-3 rounded-md inline-flex items-center">
-                                        <svg
-                                            class="w-5 h-5 mr-2 text-green-500"
-                                            fill="currentColor"
-                                            viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                clip-rule="evenodd"
-                                            />
-                                        </svg>
-                                        <span class="text-green-500 font-medium text-lg">
-                                            99% 93 Patient Stories
-                                        </span>
-                                    </div>
-                                    <div class="mt-6">
-                                        <p class="text-gray-500 text-lg">
-                                            Kec. Gamping, Kabupaten Sleman, DIY
-                                        </p>
-                                        <p class="text-gray-500 text-lg">
-                                            The most famous relaxation spa
-                                        </p>
-                                        <a
-                                            href="#"
-                                            class="text-blue-500 hover:text-blue-700 text-lg"
-                                        >
-                                            more
-                                        </a>
-                                    </div>
-                                    <div class="mt-6">
-                                        <p class="text-gray-500 text-lg">
-                                            FREE &#8377;500 Consultation fee at
-                                            clinic
-                                        </p>
-                                    </div>
-                                    <div class="mt-6">
-                                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded text-lg">
-                                            Book FREE Spa Visit
-                                        </button>
-                                    </div>
-                                    <div class="mt-10">
-                                        <h3 class="text-xl font-bold">
-                                            Available Today
-                                        </h3>
-                                        <div class="grid grid-cols-3 gap-6 mt-6">
-                                            <div>
-                                                <p class="text-gray-500 text-lg">
-                                                    Morning
-                                                </p>
-                                                <p class="font-medium text-lg">
-                                                    11:30 AM
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p class="text-gray-500 text-lg">
-                                                    Afternoon
-                                                </p>
-                                                <p class="font-medium text-lg">
-                                                    12:00 PM
-                                                </p>
-                                                <p class="font-medium text-lg">
-                                                    12:30 PM
-                                                </p>
-                                                <p class="font-medium text-lg">
-                                                    01:30 PM
-                                                </p>
-                                                <p class="font-medium text-lg">
-                                                    02:00 PM
-                                                </p>
-                                                <p class="font-medium text-lg">
-                                                    02:30 PM
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p class="text-gray-500 text-lg">
-                                                    Evening
-                                                </p>
-                                                <p class="font-medium text-lg">
-                                                    06:00 PM
-                                                </p>
-                                                <p class="font-medium text-lg">
-                                                    06:30 PM
-                                                </p>
-                                                <p class="font-medium text-lg">
-                                                    07:00 PM
-                                                </p>
-                                                <p class="font-medium text-lg">
-                                                    07:30 PM
-                                                </p>
+                                        <div className="mt-6 bg-green-100 px-6 py-3 rounded-md inline-flex items-center">
+                                            <svg
+                                                className="w-5 h-5 mr-2 text-green-500"
+                                                fill="currentColor"
+                                                viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fillRule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    clipRule="evenodd"
+                                                />
+                                            </svg>
+                                            <span className="text-green-500 font-medium text-lg">99% 93 Patient Stories</span>
+                                        </div>
+                                        <div className="mt-6">
+                                            <p className="text-gray-500 text-lg">Kec. Gamping, Kabupaten Sleman, DIY</p>
+                                            <p className="text-gray-500 text-lg">The most famous relaxation spa</p>
+                                            <a
+                                                href="#"
+                                                className="text-blue-500 hover:text-blue-700 text-lg"
+                                            >
+                                                more
+                                            </a>
+                                        </div>
+                                        <div className="mt-6">
+                                            <p className="text-gray-500 text-lg">FREE &#8377;500 Consultation fee at clinic</p>
+                                        </div>
+                                        <div className="mt-6">
+                                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded text-lg">
+                                                Book FREE Spa Visit
+                                            </button>
+                                        </div>
+                                        <div className="mt-10">
+                                            <h3 className="text-xl font-bold">Available Today</h3>
+                                            <div className="grid grid-cols-3 gap-6 mt-6">
+                                                <div>
+                                                    <p className="text-gray-500 text-lg">Morning</p>
+                                                    <p className="font-medium text-lg">11:30 AM</p>
+                                                </div>
+                                                <div>
+                                                    <p className="text-gray-500 text-lg">Afternoon</p>
+                                                    <p className="font-medium text-lg">12:00 PM</p>
+                                                    <p className="font-medium text-lg">12:30 PM</p>
+                                                    <p className="font-medium text-lg">01:30 PM</p>
+                                                    <p className="font-medium text-lg">02:00 PM</p>
+                                                    <p className="font-medium text-lg">02:30 PM</p>
+                                                </div>
+                                                <div>
+                                                    <p className="text-gray-500 text-lg">Evening</p>
+                                                    <p className="font-medium text-lg">06:00 PM</p>
+                                                    <p className="font-medium text-lg">06:30 PM</p>
+                                                    <p className="font-medium text-lg">07:00 PM</p>
+                                                    <p className="font-medium text-lg">07:30 PM</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="">
-                                    <h2 class="text-2xl font-bold mb-6">
-                                        Maps Location
-                                    </h2>
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15813.61369824441!2d110.33927410840992!3d-7.746962888130327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58f2f0a9180d%3A0x65615dadf02a4713!2sAnjani%20Spa!5e0!3m2!1sen!2sid!4v1717088008917!5m2!1sen!2sid"
-                                        width="100%"
-                                        height="400"
-                                        style="border:;"
-                                        allowfullscreen=""
-                                        loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"
-                                    ></iframe>
+                                    <div>
+                                        <h2 className="text-2xl font-bold mb-6">Maps Location</h2>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15813.61369824441!2d110.33927410840992!3d-7.746962888130327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58f2f0a9180d%3A0x65615dadf02a4713!2sAnjani%20Spa!5e0!3m2!1sen!2sid!4v1717088008917!5m2!1sen!2sid"
+                                            width="100%"
+                                            height="400"
+                                            style={{ border: "" }}
+                                            allowFullScreen=""
+                                            loading="lazy"
+                                            referrerPolicy="no-referrer-when-downgrade"
+                                        ></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -278,7 +233,6 @@ function spa({ auth }) {
                                             />
                                         </svg>
                                     </a>
-                                    {/* Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" */}
                                     <a
                                         href="#"
                                         aria-current="page"
@@ -399,7 +353,7 @@ function spa({ auth }) {
                     </div>
                 </div>
             </main>
-        </GuestLayout>
+        </AuthenticatedLayout>
     );
 }
 

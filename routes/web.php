@@ -26,9 +26,9 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/spa', function () {
-    return Inertia::render('Spa');
-})->middleware(['auth', 'verified'])->name('spa');
+// Route::get('/spa', function () {
+//     return Inertia::render('Spa');
+// })->middleware(['auth', 'verified'])->name('spa');
 
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard');
