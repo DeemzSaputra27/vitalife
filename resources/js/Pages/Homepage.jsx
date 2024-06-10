@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from '@inertiajs/inertia-react';
-import { Link, Head } from '@inertiajs/react';
+import { Link, Head } from '@inertiajs/inertia-react';
 
 export default function Homepage({ auth, laravelVersion, phpVersion }) {
     const handleImageError = () => {
@@ -12,11 +11,10 @@ export default function Homepage({ auth, laravelVersion, phpVersion }) {
 
     return (
         <div>
+            <Head title="Homepage" />
             <h1>Welcome to the Homepage</h1>
             <p>This is the default homepage for your Laravel application.</p>
             <Link href="/about">Go to About page</Link>
         </div>
     );
-};
-
-export default Homepage;
+}
