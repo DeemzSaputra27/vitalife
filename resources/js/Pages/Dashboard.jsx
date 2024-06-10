@@ -79,7 +79,7 @@ function Dashboard({ auth }) {
                 <div class="p-20 text-center flex flex-col items-center">
                     <h2 class="text-4xl font-bold mb-8">Wellness Support</h2>
                     <div class="flex space-x-20">
-                        <Link href={route("spa")}>
+                        <Link href="/spa">
                             <a class="flex-shrink-0 ml-8 mr-0 group">
                                 <div class="relative p-4 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
                                     <img
