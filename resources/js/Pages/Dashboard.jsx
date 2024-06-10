@@ -92,7 +92,8 @@ function Dashboard({ auth }) {
                             </a>
                         </Link>
                         <div class="flex-shrink-0 w-16"></div>
-                        <a href="#yoga" class="flex-shrink-0 ml-8 mr-0 group">
+                        <Link href="/yoga">
+                        <a class="flex-shrink-0 ml-8 mr-0 group">
                             <div class="relative p-4 group-hover:shadow-md rounded-lg  group-hover:border-gray-500 group-hover:rounded-lg">
                                 <img
                                     src="../image/meditation.png"
@@ -102,7 +103,10 @@ function Dashboard({ auth }) {
                                 <p class="text-lg font-bold">YOGA</p>
                             </div>
                         </a>
+                        </Link>
+                        
                         <div class="flex-shrink-0 w-16"></div>
+                        <Link href="/event"> 
                         <a href="#event" class="flex-shrink-0 ml-8 mr-0 group">
                             <div class="relative p-4 group-hover:shadow-md rounded-lg  group-hover:border-gray-500 group-hover:rounded-lg">
                                 <img
@@ -113,6 +117,7 @@ function Dashboard({ auth }) {
                                 <p class="text-lg font-bold">EVENT</p>
                             </div>
                         </a>
+                        </Link>
                     </div>
                 </div>
 
