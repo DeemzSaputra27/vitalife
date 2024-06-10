@@ -27,7 +27,7 @@ export default function Authenticated({ user, header, children }) {
 
                             <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                                 <NavLink>
-                                    <div class="flex rounded-full overflow-hidden shadow-sm">
+                                    {/* <div class="flex rounded-full overflow-hidden shadow-sm">
                                         <div class="relative flex-grow focus-within:z-10">
                                             <input
                                                 type="text"
@@ -42,29 +42,58 @@ export default function Authenticated({ user, header, children }) {
                                             </div>
                                         </div>
                                         <div class="flex-grow-2"></div>
-                                    </div>
+                                    </div> */}
                                     <ul class="flex space-x-2">
                                         <li>
-                                            <a href="#" class="px-4 opacity-100">Home</a>
+                                            <a
+                                                href="#"
+                                                class="px-4 opacity-100"
+                                            >
+                                                Home
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Find Spa</a>
+                                            <a
+                                                href="#"
+                                                class="px-4 opacity-50 hover:opacity-100"
+                                            >
+                                                Find Spa
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Find Yoga</a>
+                                            <a
+                                                href="#"
+                                                class="px-4 opacity-50 hover:opacity-100"
+                                            >
+                                                Find Yoga
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Event</a>
+                                            <a
+                                                href="#"
+                                                class="px-4 opacity-50 hover:opacity-100"
+                                            >
+                                                Event
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Spesialisation</a>
+                                            <a
+                                                href="#"
+                                                class="px-4 opacity-50 hover:opacity-100"
+                                            >
+                                                Spesialisation
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="px-4 opacity-50 hover:opacity-100">Voucher</a>
+                                            <a
+                                                href="#"
+                                                class="px-4 opacity-50 hover:opacity-100"
+                                            >
+                                                Voucher
+                                            </a>
                                         </li>
                                     </ul>
                                 </NavLink>
-
                             </div>
                         </div>
 

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head, Link } from "@inertiajs/react";
-import { motion } from "framer-motion";
+import Footers from "@/Layouts/Footers";
 
-function spa({ auth }) {
+function Spa({ auth }) {
     const [menuItems] = useState([
         {
             name: "Barbecue salad",
@@ -25,336 +26,276 @@ function spa({ auth }) {
         },
     ]);
 
+    const animationController = useAnimation();
+
+    useEffect(() => {
+        animationController.start("visible");
+    }, [animationController]);
+
+    const variants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    };
+
+    const [showAvailable, setShowAvailable] = useState(false);
+    const handleBookClick = () => {
+        setShowAvailable((prev) => !prev);
+    };
+
+    // const [showAvailable, setShowAvailable] = useState(false);
+    // const [showMap, setShowMap] = useState(false);
+
+    // const handleBookClick = () => {
+    //     setShowAvailable(true);
+    //     setShowMap(true);
+    // };
+
     return (
-        <AuthenticatedLayout user={auth.user} header={<h1>Spa</h1>}>
-            <Head title="spa" />
-            <main>
+        <AuthenticatedLayout user={auth.user}>
+            <Head title="Spa" />
+            <main className="mt-16">
                 <div className="bg-gray flex justify-center items-center">
-                    <div className="bg-gray flex justify-center items-center">
-                        <div className="bg-gray-100 rounded-2xl shadow-lg w-full max-w-4xl p-8">
-                            <div className="flex justify-between items-center mb-6">
-                                <div className="bg-gray-100 border-none rounded-md py-2 px-4 text-sm">
-                                    <input
-                                        type="text"
-                                        name="location"
-                                        id="location"
-                                        className="block w-full rounded-md border-0 py-1.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset"
-                                        placeholder="Set your location"
-                                    />
-                                </div>
-                                <div className="bg-gray-100 border-none rounded-md py-2 px-4 text-sm">
-                                    <input
-                                        type="text"
-                                        className="block w-full rounded-md border-0 py-1.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset"
-                                        placeholder="Specialization"
-                                    />
-                                </div>
-                                <div className="flex items-center">
-                                    <button className="bg-blue-600 text-white rounded-md py-2 px-4 text-sm">
-                                        Search
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div className="flex justify-start mb-6">
-                                <div className="flex items-center space-x-2">
-                                    <div className="input-group">
-                                        <select
-                                            type="inputWay"
-                                            className="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline"
-                                        >
-                                            <option selected>Availability</option>
-                                            <option>One Way</option>
-                                            <option>Multiple Way</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div className="flex items-center space-x-2 ml-6">
-                                    <select
-                                        type="passengers"
-                                        className="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline"
-                                    >
-                                        <option selected>Filter</option>
-                                        <option>1 Filters</option>
-                                        <option>2 Filters</option>
-                                        <option>3 Filters</option>
-                                        <option>4 Filters</option>
-                                        <option>5 Filters</option>
-                                    </select>
-                                </div>
-                                <div className="flex items-center space-x-2 ml-6">
-                                    <span className="text-black-500">Sort By</span>
-                                    <select
-                                        type="sort"
-                                        className="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline"
-                                    >
-                                        <option selected>Relevance</option>
-                                        <option>Business</option>
-                                        <option>Economy</option>
-                                        <option>1st Class</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="flex justify-center items-center">
-                            <div className="font-sans">
-                                <div className="container mx-auto py-8 grid grid-cols-2 gap-5">
-                                    <div className="bg-white rounded-lg shadow-2xl p-12">
-                                        <div className="flex items-center">
-                                            <div className="w-16 h-16 rounded-full bg-gray-200 mr-6"></div>
-                                            <div>
-                                                <h2 className="text-2xl font-bold">MANSION SPA JOGJA</h2>
-                                                <p className="text-gray-500 text-lg">Relaxation</p>
-                                                <p className="text-gray-500 text-lg">16 years experience overall</p>
-                                            </div>
-                                        </div>
-                                        <div className="mt-6 bg-green-100 px-6 py-3 rounded-md inline-flex items-center">
-                                            <svg
-                                                className="w-5 h-5 mr-2 text-green-500"
-                                                fill="currentColor"
-                                                viewBox="0 0 20 20"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    fillRule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                    clipRule="evenodd"
-                                                />
-                                            </svg>
-                                            <span className="text-green-500 font-medium text-lg">99% 93 Patient Stories</span>
-                                        </div>
-                                        <div className="mt-6">
-                                            <p className="text-gray-500 text-lg">Kec. Gamping, Kabupaten Sleman, DIY</p>
-                                            <p className="text-gray-500 text-lg">The most famous relaxation spa</p>
-                                            <a
-                                                href="#"
-                                                className="text-blue-500 hover:text-blue-700 text-lg"
-                                            >
-                                                more
-                                            </a>
-                                        </div>
-                                        <div className="mt-6">
-                                            <p className="text-gray-500 text-lg">FREE &#8377;500 Consultation fee at clinic</p>
-                                        </div>
-                                        <div className="mt-6">
-                                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded text-lg">
-                                                Book FREE Spa Visit
-                                            </button>
-                                        </div>
-                                        <div className="mt-10">
-                                            <h3 className="text-xl font-bold">Available Today</h3>
-                                            <div className="grid grid-cols-3 gap-6 mt-6">
-                                                <div>
-                                                    <p className="text-gray-500 text-lg">Morning</p>
-                                                    <p className="font-medium text-lg">11:30 AM</p>
-                                                </div>
-                                                <div>
-                                                    <p className="text-gray-500 text-lg">Afternoon</p>
-                                                    <p className="font-medium text-lg">12:00 PM</p>
-                                                    <p className="font-medium text-lg">12:30 PM</p>
-                                                    <p className="font-medium text-lg">01:30 PM</p>
-                                                    <p className="font-medium text-lg">02:00 PM</p>
-                                                    <p className="font-medium text-lg">02:30 PM</p>
-                                                </div>
-                                                <div>
-                                                    <p className="text-gray-500 text-lg">Evening</p>
-                                                    <p className="font-medium text-lg">06:00 PM</p>
-                                                    <p className="font-medium text-lg">06:30 PM</p>
-                                                    <p className="font-medium text-lg">07:00 PM</p>
-                                                    <p className="font-medium text-lg">07:30 PM</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <h2 className="text-2xl font-bold mb-6">Maps Location</h2>
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15813.61369824441!2d110.33927410840992!3d-7.746962888130327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58f2f0a9180d%3A0x65615dadf02a4713!2sAnjani%20Spa!5e0!3m2!1sen!2sid!4v1717088008917!5m2!1sen!2sid"
-                                            width="100%"
-                                            height="400"
-                                            style={{ border: "" }}
-                                            allowFullScreen=""
-                                            loading="lazy"
-                                            referrerPolicy="no-referrer-when-downgrade"
-                                        ></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
-                        <div class="flex flex-1 justify-between sm:hidden">
-                            <a
-                                href="#"
-                                class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
-                            >
-                                Previous
-                            </a>
-                            <a
-                                href="#"
-                                class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
-                            >
-                                Next
-                            </a>
-                        </div>
-                        <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
-                            <div>
-                                <p class="text-sm text-gray-700">
-                                    Showing
-                                    <span class="font-medium">1</span>
-                                    to
-                                    <span class="font-medium">10</span>
-                                    of
-                                    <span class="font-medium">97</span>
-                                    results
-                                </p>
-                            </div>
-                            <div>
-                                <nav
-                                    class="isolate inline-flex -space-x-px rounded-md shadow-sm"
-                                    aria-label="Pagination"
-                                >
-                                    <a
-                                        href="#"
-                                        class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
-                                    >
-                                        <span class="sr-only">Previous</span>
-                                        <svg
-                                            class="h-5 w-5"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
-                                                clip-rule="evenodd"
-                                            />
-                                        </svg>
-                                    </a>
-                                    <a
-                                        href="#"
-                                        aria-current="page"
-                                        class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                    >
-                                        1
-                                    </a>
-                                    <a
-                                        href="#"
-                                        class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
-                                    >
-                                        2
-                                    </a>
-                                    <a
-                                        href="#"
-                                        class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
-                                    >
-                                        3
-                                    </a>
-                                    <span class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">
-                                        ...
-                                    </span>
-                                    <a
-                                        href="#"
-                                        class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
-                                    >
-                                        8
-                                    </a>
-                                    <a
-                                        href="#"
-                                        class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
-                                    >
-                                        9
-                                    </a>
-                                    <a
-                                        href="#"
-                                        class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
-                                    >
-                                        10
-                                    </a>
-                                    <a
-                                        href="#"
-                                        class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
-                                    >
-                                        <span class="sr-only">Next</span>
-                                        <svg
-                                            class="h-5 w-5"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                                                clip-rule="evenodd"
-                                            />
-                                        </svg>
-                                    </a>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center h-screen bg-gray-100">
-                        <div class="bg-white shadow-lg rounded-lg w-full max-w-md p-6">
-                            <div class="flex items-center">
-                                <img
-                                    src="mansion-spa-jogja.png"
-                                    alt="Mansion Spa Jogja"
-                                    class="w-20 h-20 rounded-full mr-4"
+                    <motion.div
+                        className="bg-gray-100 rounded-2xl shadow-lg w-full max-w-4xl p-8"
+                        initial="hidden"
+                        animate={animationController}
+                        variants={variants}
+                    >
+                        {/* div1 */}
+                        <div className="flex justify-start items-center mb-6 w-full">
+                            <div className="bg-gray-100 border-none rounded-md py-2 px-4 text-sm">
+                                <input
+                                    type="text"
+                                    name="location"
+                                    id="location"
+                                    className="block w-full rounded-md border-0 py-1.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset"
+                                    placeholder="Set your location"
+                                    style={{ width: "317px" }}
                                 />
-                                <div>
-                                    <h3 class="text-lg font-bold">
-                                        MANSION SPA JOGJA
-                                    </h3>
-                                    <p class="text-gray-500 text-sm">
-                                        Relaxation
-                                    </p>
-                                    <p class="text-gray-500 text-sm">
-                                        16 years experience overall
-                                    </p>
+                            </div>
+                            <div className="bg-gray-100 border-none rounded-md py-2 px-4 text-sm">
+                                <input
+                                    type="text"
+                                    className="block w-full rounded-md border-0 py-1.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset"
+                                    placeholder="Specialization"
+                                    style={{ width: "317px" }}
+                                />
+                            </div>
+                            <div className="flex items-center">
+                                <button
+                                    className="bg-blue-600 text-white rounded-md py-2 px-6 text-sm"
+                                    style={{ width: "120px" }}
+                                >
+                                    <div className="flex items-center">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="h-4 w-4 mr-1"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth={2}
+                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                            />
+                                        </svg>
+                                        <span className="text-sm">Search</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* div2 */}
+                        <div className="flex justify-start mb-6 w-full pl-4">
+                            <div className="flex items-center">
+                                <div className="input-group">
+                                    <select
+                                        type="inputWay"
+                                        className="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline w-40"
+                                    >
+                                        <option selected>Availability</option>
+                                        <option>One Way</option>
+                                        <option>Multiple Way</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="mt-4">
-                                <p class="text-gray-500">
-                                    Mc. Gramphs, Kebutuhan Stamen, DIY The most
-                                    famous relaxation spa more
-                                </p>
-                                <p class="text-gray-500 mt-2">
-                                    FREE Rp50 Consultation fee at clinic
-                                </p>
+                            <div className="flex items-center ml-12 mr-5">
+                                <select
+                                    type="passengers"
+                                    className="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline w-28"
+                                >
+                                    <option selected>Filter</option>
+                                    <option>1 Filters</option>
+                                    <option>2 Filters</option>
+                                    <option>3 Filters</option>
+                                    <option>4 Filters</option>
+                                    <option>5 Filters</option>
+                                </select>
                             </div>
-                            <div class="flex items-center justify-between mt-4">
-                                <div class="flex items-center">
+                            <div className="flex items-center space-x-4 ml-6">
+                                <span className="text-black-500">Sort By</span>
+                                <select
+                                    type="sort"
+                                    className="form-select appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-3 rounded-md leading-tight focus:outline-none focus:shadow-outline w-48"
+                                >
+                                    <option selected>Relevance</option>
+                                    <option>Business</option>
+                                    <option>Economy</option>
+                                    <option>1st Class</option>
+                                </select>
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+                <div className="flex justify-center items-center">
+                    <div className="font-sans">
+                        <div className="container mx-auto py-8 grid grid-cols-2 gap-5">
+                            <motion.div
+                                className="bg-white rounded-lg shadow-2xl p-12"
+                                variants={variants}
+                                initial="hidden"
+                                animate={animationController}
+                            >
+                                {/* spa1 */}
+                                <div className="flex" onClick={handleBookClick}>
+                                    <div className="flex items-center">
+                                        <div className="w-16 h-16 rounded-full bg-gray-200 mr-6"></div>
+                                        <div>
+                                            <h2 className="text-2xl font-bold">
+                                                MANSION SPA JOGJA
+                                            </h2>
+                                            <p className="text-gray-500 text-lg">
+                                                Relaxation
+                                            </p>
+                                            <p className="text-gray-500 text-lg">
+                                                16 years experience overall
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="mt-6 bg-green-100 px-6 py-3 rounded-md inline-flex items-center">
                                     <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5 text-green-500 mr-1"
-                                        viewBox="0 0 20 20"
+                                        className="w-5 h-5 mr-2 text-green-500"
                                         fill="currentColor"
+                                        viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <path
-                                            fill-rule="evenodd"
+                                            fillRule="evenodd"
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"
+                                            clipRule="evenodd"
                                         />
                                     </svg>
-                                    <span class="text-green-500 font-bold">
-                                        99%
-                                    </span>
-                                    <span class="text-gray-500 ml-1">
-                                        93 Patient Stories
+                                    <span className="text-green-500 font-medium text-lg">
+                                        99% 93 Patient Stories
                                     </span>
                                 </div>
-                                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-                                    Book FREE Spa Visit
-                                </button>
+                                <div className="mt-6">
+                                    <p className="text-gray-500 text-lg">
+                                        Kec. Gamping, Kabupaten Sleman, DIY
+                                    </p>
+                                    <p className="text-gray-500 text-lg">
+                                        The most famous relaxation spa
+                                    </p>
+                                    <a
+                                        href="#"
+                                        className="text-blue-500 hover:text-blue-700 text-lg"
+                                    >
+                                        more
+                                    </a>
+                                </div>
+                                <div className="mt-6">
+                                    <p className="text-gray-500 text-lg">
+                                        FREE &#8377;500 Consultation fee at
+                                        clinic
+                                    </p>
+                                </div>
+                                <div className="mt-6">
+                                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded text-lg">
+                                        Book FREE Spa Visit
+                                    </button>
+                                </div>
+
+                                {/* Available */}
+                                {showAvailable && (
+                                    <div className="mt-10">
+                                        <h3 className="text-xl font-bold">
+                                            Available Today
+                                        </h3>
+                                        <div className="grid grid-cols-3 gap-6 mt-6">
+                                            <div>
+                                                <p className="text-gray-500 text-lg">
+                                                    Morning
+                                                </p>
+                                                <p className="font-medium text-lg">
+                                                    11:30 AM
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p className="text-gray-500 text-lg">
+                                                    Afternoon
+                                                </p>
+                                                <p className="font-medium text-lg">
+                                                    12:00 PM
+                                                </p>
+                                                <p className="font-medium text-lg">
+                                                    12:30 PM
+                                                </p>
+                                                <p className="font-medium text-lg">
+                                                    01:30 PM
+                                                </p>
+                                                <p className="font-medium text-lg">
+                                                    02:00 PM
+                                                </p>
+                                                <p className="font-medium text-lg">
+                                                    02:30 PM
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p className="text-gray-500 text-lg">
+                                                    Evening
+                                                </p>
+                                                <p className="font-medium text-lg">
+                                                    06:00 PM
+                                                </p>
+                                                <p className="font-medium text-lg">
+                                                    06:30 PM
+                                                </p>
+                                                <p className="font-medium text-lg">
+                                                    07:00 PM
+                                                </p>
+                                                <p className="font-medium text-lg">
+                                                    07:30 PM
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </motion.div>
+                            <div>
+                                <h2 className="text-2xl font-bold mb-6">
+                                    Maps Location
+                                </h2>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15813.61369824441!2d110.33927410840992!3d-7.746962888130327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58f2f0a9180d%3A0x65615dadf02a4713!2sAnjani%20Spa!5e0!3m2!1sen!2sid!4v1717088008917!5m2!1sen!2sid"
+                                    width="100%"
+                                    height="400"
+                                    style={{ border: "" }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <Footers />
             </main>
         </AuthenticatedLayout>
     );
 }
 
-export default spa;
+export default Spa;

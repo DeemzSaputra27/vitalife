@@ -13,14 +13,23 @@ Route::get('/spa', function () {
     return Inertia::render('spa');
 });
 
+Route::get('/yoga', function () {
+    return Inertia::render('yoga');
+});
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
+        // 'canSpa' => Route::has('spa'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
 });
+
+// Route::get('/spa', function () {
+//     return Inertia::render('Spa');
+// })->name('spa');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
