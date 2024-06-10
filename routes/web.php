@@ -17,6 +17,10 @@ Route::get('/yoga', function () {
     return Inertia::render('yoga');
 });
 
+Route::get('/spesialis', function () {
+    return Inertia::render('Spesialis');
+});
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
