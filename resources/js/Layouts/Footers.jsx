@@ -19,11 +19,11 @@ const Footer = () => {
                     <div className="col-span-12 lg:col-span-6 ml-4 justify-center">
                         <h6 className="font-medium opacity-70 mb-2">
                             {" "}
-                            Hello Visitor,{" "}
+                            Hello Buleeee,{" "}
                         </h6>
                         <h1 className="text-3xl leading-none font-bold uppercase tracking-wider mb-2">
                             {" "}
-                            Welcome to easyfrontend{" "}
+                            Welcome to Vitalife{" "}
                         </h1>
                         <hr className="bg-blue-600 h-1 rounded-[3px] w-12 opacity-100 my-6" />
                         <p className="opacity-70 mb-2">
