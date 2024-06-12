@@ -1,7 +1,9 @@
-export default function ApplicationLogo(props) {
+export default function ApplicationLogo() {
     return (
-        <svg {...props} viewBox="0 0 316 316">
-            <image src="../image/LOGO_2.png" width="100%" height="100%" />
-        </svg>
+        <img
+            src="../image/LOGO_1.png"
+            alt="Application Logo"
+            className="w-48 h-48 object-contain mx-auto"
+        />
     );
 }

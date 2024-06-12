@@ -1,4 +1,6 @@
 import { Link, Head } from "@inertiajs/react";
+import Footers from "@/Layouts/Footers";
+import ApplicationLogo from "@/Components/ApplicationLogo";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     const handleImageError = () => {
@@ -68,8 +70,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 <div
                     className="ezy__header30-topbar py-36 md:py-56 bg-center bg-no-repeat bg-cover relative flex items-center justify-center z-[1]"
                     style={{
-                        backgroundImage:
-                            "url(https://cdn.easyfrontend.com/pictures/contents/contents-banner.jpg)",
+                        backgroundImage: `url(../image/bgyoga.jpg)`,
                     }}
                 >
                     <nav className="fixed top-4 right-4 flex justify-end">
@@ -97,10 +98,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             </>
                         )}
                     </nav>
+                    {/* <ApplicationLogo className="flex justify-center mt-12" /> */}
                     <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-40 -z-10" />
                     <div className="container px-4 mx-auto">
                         <div className="max-w-5xl flex justify-center text-center mx-auto">
                             <div>
+                                <ApplicationLogo />
                                 <h1 className="text-3xl font-bold leading-tight md:text-6xl mb-6">
                                     Welcome to Vitalife
                                 </h1>
@@ -110,8 +113,21 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                             Pursue your passion with online
                                             classes taught by award - winning
                                             chefs, writers, and performers.
+                                            Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Eum
+                                            mollitia, ut porro perferendis,
+                                            fugiat pariatur iusto ea repudiandae
+                                            officia iste quaerat possimus dolore
+                                            vero magnam placeat quam eligendi id
+                                            temporibus. Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit.
+                                            Porro et veritatis dolore provident,
+                                            perferendis quod saepe animi ut
+                                            error earum ducimus a perspiciatis
+                                            consectetur quis eos eum vero
+                                            distinctio temporibus!
                                         </p>
-                                        <form className="w-full flex justify-center items-center rounded-xl overflow-hidden mx-auto mt-12">
+                                        {/* <form className="w-full flex justify-center items-center rounded-xl overflow-hidden mx-auto mt-12">
                                             <input
                                                 type="text"
                                                 className="bg-white bg-opacity-50 dark:bg-slate-800 dark:bg-opacity-50 text-black dark:text-white placeholder:text-slate-700 dark:placeholder:text-slate-400 px-7 py-3 grow focus:outline-none"
@@ -120,7 +136,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                             <button className="flex justify-center items-center text-white text-lg py-4 px-7 h-12 border border-blue-600 bg-blue-600 hover:bg-opacity-90 hover:border-opacity-90 duration-300">
                                                 <i className="fas fa-search" />
                                             </button>
-                                        </form>
+                                        </form> */}
                                     </div>
                                 </div>
                             </div>
@@ -223,10 +239,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     </div>
                 </div>
             </section>
-
+            {/* 
             <footer className="py-16 text-center text-sm text-black dark:text-white/70">
                 Laravel v{laravelVersion} (PHP v{phpVersion})
-            </footer>
+            </footer> */}
+            <Footers />
             {/* </div>
                 </div>
             </div> */}

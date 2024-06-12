@@ -6,8 +6,7 @@ export default function Guest({ children }) {
         <div
             className="min-h-screen flex flex-col justify-center sm:justify-end items-center pt-6 sm:pt-0"
             style={{
-                backgroundImage:
-                    "url(https://cdn.easyfrontend.com/pictures/sign-in-up/sign-in-up-1.png)",
+                backgroundImage: `url(../image/spa.jpg)`,
                 backgroundSize: "cover",
             }}
         >

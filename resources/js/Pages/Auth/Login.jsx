@@ -3,7 +3,7 @@ import Checkbox from "@/Components/Checkbox";
 import GuestLayout from "@/Layouts/GuestLayout";
 import InputError from "@/Components/InputError";
 import InputLabel from "@/Components/InputLabel";
-import PrimaryButton from "@/Components/PrimaryButton";
+import LogoPutih from "@/Components/LogoPutih";
 import TextInput from "@/Components/TextInput";
 import { Head, Link, useForm } from "@inertiajs/react";
 
@@ -45,7 +45,7 @@ export default function Login({ status, canResetPassword }) {
                     </Link>
                 </div>
             </div>
-            <h2 className="text-center text-indigo-900 dark:text-white text-2xl font-bold mb-3">
+            <h2 className="text-center dark:text-dark text-2xl font-bold mb-3">
                 Welcome to Vitalife
             </h2>
             <section>
