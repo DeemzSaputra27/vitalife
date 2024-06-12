@@ -81,6 +81,7 @@ function Dashboard({ auth }) {
                         </div>
                     </div>
                 </div>
+
                 <div class="bg-white rounded-full shadow-md p-7 text-center flex flex-col items-center">
                     <h2 class="text-4xl font-bold mb-8">Wellness Support</h2>
                     <div class="flex space-x-20">
