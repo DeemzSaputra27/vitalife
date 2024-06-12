@@ -30,7 +30,7 @@ function Dashboard({ auth }) {
         <AuthenticatedLayout user={auth.user}>
             <Head title="Dashboard" />
             <main>
-                <div className="bg-biru mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+                <div className="bg-biru mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 pb-0">
                     <div className="pt-5">
                         <div className="container px-3 mx-auto flex flex-wrap items-center">
                             <div className="flex flex-row items-center">
@@ -81,168 +81,273 @@ function Dashboard({ auth }) {
                         </div>
                     </div>
                 </div>
-                <div class="p-20 text-center flex flex-col items-center">
+                <div class="bg-white rounded-full shadow-md p-7 text-center flex flex-col items-center">
                     <h2 class="text-4xl font-bold mb-8">Wellness Support</h2>
                     <div class="flex space-x-20">
-                        <Link href="/spa">
-                            {/* <Link href={route("spa")}> */}
-                            <a class="flex-shrink-0 ml-8 mr-0 group">
-                                <div class="relative p-4 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
-                                    <img
-                                        src="../image/spa.png"
-                                        alt="spa"
-                                        class="h-32 mb-5"
-                                    />
-                                    <p class="text-lg font-bold">SPA</p>
-                                </div>
-                            </a>
-                        </Link>
-                        <div class="flex-shrink-0 w-16"></div>
-                        <Link href="/yoga">
-                            <a class="flex-shrink-0 ml-8 mr-0 group">
-                                <div class="relative p-4 group-hover:shadow-md rounded-lg  group-hover:border-gray-500 group-hover:rounded-lg">
-                                    <img
-                                        src="../image/meditation.png"
-                                        alt="Meditation"
-                                        class="h-32 mb-5"
-                                    />
-                                    <p class="text-lg font-bold">YOGA</p>
-                                </div>
-                            </a>
-                        </Link>
+                        <motion.button
+                            class="text-lg font-bold transition duration-300 ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                                boxShadow: "0px 0px 10px rgba(0,0,0,0.2)",
+                            }}
+                        >
+                            <Link href="/spa">
+                                <a class="flex-shrink-0 ml-8 mr-0 group">
+                                    <div class="relative p-4 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
+                                        <img
+                                            src="../image/spa.png"
+                                            alt="spa"
+                                            class="h-32 mb-5"
+                                        />
 
-                        <div class="flex-shrink-0 w-16"></div>
-                        <Link href="/event">
-                            <a
-                                href="#event"
-                                class="flex-shrink-0 ml-8 mr-0 group"
-                            >
-                                <div class="relative p-4 group-hover:shadow-md rounded-lg  group-hover:border-gray-500 group-hover:rounded-lg">
-                                    <img
-                                        src="../image/run.png"
-                                        alt="event"
-                                        class="h-32 mb-5"
-                                    />
-                                    <p class="text-lg font-bold">EVENT</p>
-                                </div>
-                            </a>
-                        </Link>
+                                        <p class="text-lg font-bold">SPA</p>
+                                    </div>
+                                </a>
+                            </Link>
+                        </motion.button>
+
+                        <div class="flex-shrink-0 w-4"></div>
+                        <motion.button
+                            class="text-lg font-bold transition duration-300 ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                                boxShadow: "0px 0px 10px rgba(0,0,0,0.2)",
+                            }}
+                        >
+                            <Link href="/yoga">
+                                <a class="flex-shrink-0 ml-8 mr-0 group">
+                                    <div class="relative p-4 group-hover:shadow-md rounded-lg  group-hover:border-gray-500 group-hover:rounded-lg">
+                                        <img
+                                            src="../image/meditation.png"
+                                            alt="Meditation"
+                                            class="h-32 mb-5"
+                                        />
+                                        <p class="text-lg font-bold">YOGA</p>
+                                    </div>
+                                </a>
+                            </Link>
+                        </motion.button>
+
+                        <div class="flex-shrink-0 w-4"></div>
+                        <motion.button
+                            class="text-lg font-bold transition duration-300 ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                                boxShadow: "0px 0px 10px rgba(0,0,0,0.2)",
+                            }}
+                        >
+                            <Link href="/event">
+                                <a
+                                    href="#event"
+                                    class="flex-shrink-0 ml-8 mr-0 group"
+                                >
+                                    <div class="relative p-4 group-hover:shadow-md rounded-lg  group-hover:border-gray-500 group-hover:rounded-lg">
+                                        <img
+                                            src="../image/run.png"
+                                            alt="event"
+                                            class="h-32 mb-5"
+                                        />
+                                        <p class="text-lg font-bold">EVENT</p>
+                                    </div>
+                                </a>
+                            </Link>
+                        </motion.button>
                     </div>
                 </div>
 
                 <div class="bg-biru p-20 text-center flex flex-col items-center">
                     <h2 class="text-3xl font-bold mb-8">Specialisation</h2>
                     <div class="grid grid-cols-4 gap-20">
-                        <a
-                            href="#event"
-                            class="flex flex-col items-center group"
+                        <motion.button
+                            class="text-lg font-bold transition duration-300 ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                            }}
                         >
-                            <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
-                                <img
-                                    src="../image/anatomy.png"
-                                    alt="Anatomy"
-                                    class="h-24 mb-3"
-                                />
-                                <p class="text-base font-bold">Anatomy</p>
-                            </div>
-                        </a>
-                        <a
-                            href="#event"
-                            class="flex flex-col items-center group"
+                            <a
+                                href="#event"
+                                class="flex flex-col items-center group"
+                            >
+                                <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
+                                    <img
+                                        src="../image/anatomy.png"
+                                        alt="Anatomy"
+                                        class="h-24 mb-3"
+                                    />
+                                    <p class="text-base font-bold">Anatomy</p>
+                                </div>
+                            </a>
+                        </motion.button>
+
+                        <motion.button
+                            class="text-lg font-bold transition duration-300 ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                            }}
                         >
-                            <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
-                                <img
-                                    src="../image/care.png"
-                                    alt="Primary Care"
-                                    class="h-24 mb-3"
-                                />
-                                <p class="text-base font-bold">Primary Care</p>
-                            </div>
-                        </a>
-                        <a
-                            href="#event"
-                            class="flex flex-col items-center group"
+                            <a
+                                href="#event"
+                                class="flex flex-col items-center group"
+                            >
+                                <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
+                                    <img
+                                        src="../image/care.png"
+                                        alt="Primary Care"
+                                        class="h-24 mb-3"
+                                    />
+                                    <p class="text-base font-bold">
+                                        Primary Care
+                                    </p>
+                                </div>
+                            </a>
+                        </motion.button>
+
+                        <motion.button
+                            class="text-lg font-bold transition duration-300 ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                            }}
                         >
-                            <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
-                                <img
-                                    src="../image/cardiology.png"
-                                    alt="Cardiology"
-                                    class="h-24 mb-3"
-                                />
-                                <p class="text-base font-bold">Cardiology</p>
-                            </div>
-                        </a>
-                        <a
-                            href="#event"
-                            class="flex flex-col items-center group"
+                            <a
+                                href="#event"
+                                class="flex flex-col items-center group"
+                            >
+                                <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
+                                    <img
+                                        src="../image/cardiology.png"
+                                        alt="Cardiology"
+                                        class="h-24 mb-3"
+                                    />
+                                    <p class="text-base font-bold">
+                                        Cardiology
+                                    </p>
+                                </div>
+                            </a>
+                        </motion.button>
+
+                        <motion.button
+                            class="text-lg font-bold transition duration-300 ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                            }}
                         >
-                            <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
-                                <img
-                                    src="../image/skin.png"
-                                    alt="Skin & Genitals"
-                                    class="h-24 mb-3"
-                                />
-                                <p class="text-base font-bold">
-                                    Skin & Genitals
-                                </p>
-                            </div>
-                        </a>
-                        <a
-                            href="#event"
-                            class="flex flex-col items-center group"
+                            <a
+                                href="#event"
+                                class="flex flex-col items-center group"
+                            >
+                                <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
+                                    <img
+                                        src="../image/skin.png"
+                                        alt="Skin & Genitals"
+                                        class="h-24 mb-3"
+                                    />
+                                    <p class="text-base font-bold">
+                                        Skin & Genitals
+                                    </p>
+                                </div>
+                            </a>
+                        </motion.button>
+
+                        <motion.button
+                            class="text-lg font-bold transition duration-300 ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                            }}
                         >
-                            <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
-                                <img
-                                    src="../image/human.png"
-                                    alt="Human Senses"
-                                    class="h-24 mb-3"
-                                />
-                                <p class="text-base font-bold">Human Senses</p>
-                            </div>
-                        </a>
-                        <a
-                            href="#event"
-                            class="flex flex-col items-center group"
+                            <a
+                                href="#event"
+                                class="flex flex-col items-center group"
+                            >
+                                <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
+                                    <img
+                                        src="../image/human.png"
+                                        alt="Human Senses"
+                                        class="h-24 mb-3"
+                                    />
+                                    <p class="text-base font-bold">
+                                        Human Senses
+                                    </p>
+                                </div>
+                            </a>
+                        </motion.button>
+
+                        <motion.button
+                            class="text-lg font-bold transition duration-300 ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                            }}
                         >
-                            <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
-                                <img
-                                    src="../image/psico.png"
-                                    alt="Piscologist"
-                                    class="h-24 mb-3"
-                                />
-                                <p class="text-base font-bold">Piscologist</p>
-                            </div>
-                        </a>
-                        <a
-                            href="#event"
-                            class="flex flex-col items-center group"
+                            <a
+                                href="#event"
+                                class="flex flex-col items-center group"
+                            >
+                                <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
+                                    <img
+                                        src="../image/psico.png"
+                                        alt="Piscologist"
+                                        class="h-24 mb-3"
+                                    />
+                                    <p class="text-base font-bold">
+                                        Piscologist
+                                    </p>
+                                </div>
+                            </a>
+                        </motion.button>
+
+                        <motion.button
+                            class="text-lg font-bold transition duration-300 ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                            }}
                         >
-                            <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
-                                <img
-                                    src="../image/fisio.png"
-                                    alt="Fisioterapy"
-                                    class="h-24 mb-3"
-                                />
-                                <p class="text-base font-bold">Fisioterapy</p>
-                            </div>
-                        </a>
-                        <a
-                            href="#event"
-                            class="flex flex-col items-center group"
+                            <a
+                                href="#event"
+                                class="flex flex-col items-center group"
+                            >
+                                <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
+                                    <img
+                                        src="../image/fisio.png"
+                                        alt="Fisioterapy"
+                                        class="h-24 mb-3"
+                                    />
+                                    <p class="text-base font-bold">
+                                        Fisioterapy
+                                    </p>
+                                </div>
+                            </a>
+                        </motion.button>
+
+                        <motion.button
+                            class="text-lg font-bold transition duration-300 ease-in-out"
+                            whileHover={{
+                                scale: 1.1,
+                            }}
                         >
-                            <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
-                                <img
-                                    src="../image/preg.png"
-                                    alt="Pregnancy"
-                                    class="h-24 mb-3"
-                                />
-                                <p class="text-base font-bold">Pregnancy</p>
-                            </div>
-                        </a>
+                            <a
+                                href="#event"
+                                class="flex flex-col items-center group"
+                            >
+                                <div class="relative p-3 group-hover:shadow-md rounded-lg group-hover:border-gray-500 group-hover:rounded-lg">
+                                    <img
+                                        src="../image/preg.png"
+                                        alt="Pregnancy"
+                                        class="h-24 mb-3"
+                                    />
+                                    <p class="text-base font-bold">Pregnancy</p>
+                                </div>
+                            </a>
+                        </motion.button>
                     </div>
-                    <button class="bg-biru2 text-white px-6 py-3 rounded-md mt-8 hover:bg-gray-700">
-                        View All
-                    </button>
+                    <motion.button
+                        class="text-lg font-bold transition duration-300 ease-in-out"
+                        whileHover={{
+                            scale: 1.1,
+                        }}
+                    >
+                        <button class="bg-blue-500 text-white px-6 py-3 rounded-md mt-8 hover:bg-gray-700">
+                            View All
+                        </button>
+                    </motion.button>
                 </div>
 
                 <section class="ezy__team15 light py-14 md:py-24 bg-white text-zinc-900 dark:text-white z-[1]">

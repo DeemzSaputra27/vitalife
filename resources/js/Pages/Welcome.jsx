@@ -68,9 +68,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
             <section className="ezy__header30 light relative overflow-hidden text-white bg-white dark:bg-[#0b1727] z-10">
                 <div
-                    className="ezy__header30-topbar py-36 md:py-56 bg-center bg-no-repeat bg-cover relative flex items-center justify-center z-[1]"
+                    className="ezy__header30-topbar py-6 md:py-10 bg-center bg-no-repeat bg-cover relative flex items-center justify-center z-[1]"
                     style={{
                         backgroundImage: `url(../image/bgyoga.jpg)`,
+                        backgroundSize: "100%",
+                        objectFit: "cover",
                     }}
                 >
                     <nav className="fixed top-4 right-4 flex justify-end">
@@ -105,7 +107,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             <div>
                                 <ApplicationLogo />
                                 <h1 className="text-3xl font-bold leading-tight md:text-6xl mb-6">
-                                    Welcome to Vitalife
+                                    Apa itu
+                                    <span className="text-blue-300 ml-2 my-4 text-6xl font-bold leading-tight">
+                                        Vitalife
+                                    </span>
+                                    ?
                                 </h1>
                                 <div className="max-w-lg flex justify-center mx-auto">
                                     <div className="text-center">
@@ -121,11 +127,6 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                             vero magnam placeat quam eligendi id
                                             temporibus. Lorem ipsum dolor sit
                                             amet consectetur adipisicing elit.
-                                            Porro et veritatis dolore provident,
-                                            perferendis quod saepe animi ut
-                                            error earum ducimus a perspiciatis
-                                            consectetur quis eos eum vero
-                                            distinctio temporibus!
                                         </p>
                                         {/* <form className="w-full flex justify-center items-center rounded-xl overflow-hidden mx-auto mt-12">
                                             <input
@@ -145,7 +146,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
 
                 {/* courses carousel */}
-                <div className="container px-4 mx-auto mb-24 -mt-24 md:-mt-44">
+                <div className="container px-4 mx-auto mb-24 mt-12 md:mt-14">
                     <div className="z-10 relative mt-12">
                         <div className="grid grid-cols-6 gap-x-6">
                             {/* card item */}
@@ -217,6 +218,32 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                             </h4>
                                             <p className="opacity-75 mb-4">
                                                 09 courses
+                                            </p>
+                                            <a
+                                                href="#"
+                                                className="bg-blue-600 hover:bg-opacity-90 text-white py-3 rounded duration-300 px-9 mb-3"
+                                            >
+                                                View All
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* card item */}
+                            <div className="col-span-6 md:col-span-2">
+                                <div className="rounded-lg overflow-hidden mt-6 lg:mt-0">
+                                    <div className="relative">
+                                        <img
+                                            src="https://cdn.easyfrontend.com/pictures/featured/featured_10_2.png"
+                                            alt=""
+                                            className="w-full"
+                                        />
+                                        <div className="absolute bottom-0 flex flex-col justify-center items-center w-full text-white px-12 pb-6 text-center">
+                                            <h4 className="text-[22px] leading-none font-medium mb-0">
+                                                Marketing
+                                            </h4>
+                                            <p className="opacity-75 mb-4">
+                                                22 courses
                                             </p>
                                             <a
                                                 href="#"
