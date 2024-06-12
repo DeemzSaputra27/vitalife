@@ -62,8 +62,8 @@ function Spa({ auth }) {
                         variants={variants}
                     >
                         {/* div1 */}
-                        <div className="flex justify-start items-center mb-6 w-full">
-                            <div className="bg-gray-100 border-none rounded-md py-2 px-4 text-sm">
+                        <div className="flex justify-start border-gray-500 items-center mb-6 w-full">
+                            <div className="border-none rounded-md py-2 px-4 text-sm">
                                 <input
                                     type="text"
                                     name="location"
