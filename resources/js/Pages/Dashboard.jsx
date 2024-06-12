@@ -32,48 +32,52 @@ function Dashboard({ auth }) {
             <main>
                 <div className="bg-biru mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
                     <div className="pt-5">
-                        <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-                            <motion.div
-                                className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left"
-                                initial={{ opacity: 0, x: -100 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 1 }}
-                            >
-                                <p className="uppercase tracking-loose w-full">
-                                    Skip the Travel! Take Online
-                                </p>
-                                <h1 className="my-4 text-5xl font-bold leading-tight">
-                                    Welcome{" "}
-                                    <span className="text-biru2 ml-2 my-4 text-5xl font-bold leading-tight">
-                                        Vitalife
-                                    </span>
-                                </h1>
-                                <p className="leading-normal text-2xl mb-8">
-                                    We are the solution for travelling in a
-                                    healthy condition and we provide health
-                                    specialists
-                                </p>
-                                <motion.button
-                                    className="mx-auto lg:mx-0 hover:underline bg-biru2 text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
+                        <div className="container px-3 mx-auto flex flex-wrap items-center">
+                            <div className="flex flex-row items-center">
+                                <motion.div
+                                    className="w-full md:w-2/5 justify-center items-start text-center md:text-left ml-12"
+                                    initial={{ opacity: 0, x: -100 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1 }}
                                 >
-                                    Consult Now
-                                </motion.button>
-                            </motion.div>
-                            <motion.div
-                                className="w-full md:w-3/5 py-6 text-center"
-                                initial={{ opacity: 0, x: 100 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 1 }}
-                            >
-                                <div className="shadow-md rounded-lg overflow-hidden">
-                                    <img
-                                        className="w-full h-auto scale-75"
-                                        src="../image/doc2.png"
-                                    />
-                                </div>
-                            </motion.div>
+                                    <p className="uppercase tracking-loose w-full">
+                                        Skip the Travel! Take Online
+                                    </p>
+                                    <h1 className="my-4 text-5xl font-bold leading-tight">
+                                        Welcome{" "}
+                                        <span className="text-blue-300 ml-2 my-4 text-5xl font-bold leading-tight">
+                                            Vitalife
+                                        </span>
+                                    </h1>
+                                    <p className="leading-normal text-2xl mb-8">
+                                        We are the solution for travelling in a
+                                        healthy condition and we provide health
+                                        specialists
+                                    </p>
+                                    <motion.button
+                                        className="mx-auto lg:mx-0 bg-blue-500 text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.9 }}
+                                    >
+                                        Consult Now
+                                    </motion.button>
+                                </motion.div>
+
+                                {/* gambar */}
+                                <motion.div
+                                    className="w-full md:w-3/5 py-6 text-center"
+                                    initial={{ opacity: 0, x: 100 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1 }}
+                                >
+                                    <div className="rounded-lg overflow-hidden">
+                                        <img
+                                            className="w-full h-auto scale-100"
+                                            src="../image/bgdash.png"
+                                        />
+                                    </div>
+                                </motion.div>
+                            </div>
                         </div>
                     </div>
                 </div>
