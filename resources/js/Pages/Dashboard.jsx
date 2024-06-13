@@ -44,7 +44,7 @@ function Dashboard({ auth }) {
                                         Skip the Travel! Take Online
                                     </p>
                                     <h1 className="my-4 text-5xl font-bold leading-tight">
-                                        Welcome{" "}
+                                        Welcome
                                         <span className="text-blue-300 ml-2 my-4 text-5xl font-bold leading-tight">
                                             Vitalife
                                         </span>
@@ -52,12 +52,17 @@ function Dashboard({ auth }) {
                                     <p className="leading-normal text-2xl mb-8">
                                         We are the solution for travelling in a
                                         healthy condition and we provide health
-                                        specialists
+                                        specialists...
                                     </p>
                                     <motion.button
                                         className="mx-auto lg:mx-0 bg-blue-500 text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                                         whileHover={{ scale: 1.1 }}
                                         whileTap={{ scale: 0.9 }}
+                                        onClick={() => {
+                                            // kode untuk navigasi ke halaman specialisation
+                                            window.location.href =
+                                                "#specialisation";
+                                        }}
                                     >
                                         Consult Now
                                     </motion.button>
@@ -82,7 +87,7 @@ function Dashboard({ auth }) {
                     </div>
                 </div>
 
-                <div class="bg-white rounded-full shadow-md p-7 text-center flex flex-col items-center">
+                <div class="bg-white rounded-xl shadow-md p-7 text-center flex flex-col items-center">
                     <h2 class="text-4xl font-bold mb-8">Wellness Support</h2>
                     <div class="flex space-x-20">
                         <motion.button
@@ -156,9 +161,13 @@ function Dashboard({ auth }) {
                     </div>
                 </div>
 
-                <div class="bg-biru p-20 text-center flex flex-col items-center">
+                <div
+                    id="specialisation"
+                    class="bg-biru p-20 text-center flex flex-col items-center"
+                >
                     <h2 class="text-3xl font-bold mb-8">Specialisation</h2>
                     <div class="grid grid-cols-4 gap-20">
+                        {" "}
                         <motion.button
                             class="text-lg font-bold transition duration-300 ease-in-out"
                             whileHover={{
@@ -179,7 +188,6 @@ function Dashboard({ auth }) {
                                 </div>
                             </a>
                         </motion.button>
-
                         <motion.button
                             class="text-lg font-bold transition duration-300 ease-in-out"
                             whileHover={{
@@ -202,7 +210,6 @@ function Dashboard({ auth }) {
                                 </div>
                             </a>
                         </motion.button>
-
                         <motion.button
                             class="text-lg font-bold transition duration-300 ease-in-out"
                             whileHover={{
@@ -225,7 +232,6 @@ function Dashboard({ auth }) {
                                 </div>
                             </a>
                         </motion.button>
-
                         <motion.button
                             class="text-lg font-bold transition duration-300 ease-in-out"
                             whileHover={{
@@ -248,7 +254,6 @@ function Dashboard({ auth }) {
                                 </div>
                             </a>
                         </motion.button>
-
                         <motion.button
                             class="text-lg font-bold transition duration-300 ease-in-out"
                             whileHover={{
@@ -271,7 +276,6 @@ function Dashboard({ auth }) {
                                 </div>
                             </a>
                         </motion.button>
-
                         <motion.button
                             class="text-lg font-bold transition duration-300 ease-in-out"
                             whileHover={{
@@ -294,7 +298,6 @@ function Dashboard({ auth }) {
                                 </div>
                             </a>
                         </motion.button>
-
                         <motion.button
                             class="text-lg font-bold transition duration-300 ease-in-out"
                             whileHover={{
@@ -317,7 +320,6 @@ function Dashboard({ auth }) {
                                 </div>
                             </a>
                         </motion.button>
-
                         <motion.button
                             class="text-lg font-bold transition duration-300 ease-in-out"
                             whileHover={{

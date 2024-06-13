@@ -10,8 +10,8 @@ export default function Authenticated({ user, header, children }) {
         useState(false);
 
     return (
-        <div className="min-h-screen bg-gray-100">
-            <nav className="bg-white border-b border-gray-100">
+        <div className="min-h-screen bg-gray-100 pt-4">
+            <nav className="bg-white rounded-full shadow-md sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex">
@@ -25,9 +25,9 @@ export default function Authenticated({ user, header, children }) {
                                 </Link>
                             </div>
 
-                            <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                <NavLink>
-                                    {/* <div class="flex rounded-full overflow-hidden shadow-sm">
+                            <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex justify-end mr-12">
+                                {/* search */}
+                                {/* <div class="flex rounded-full overflow-hidden shadow-sm">
                                         <div class="relative flex-grow focus-within:z-10">
                                             <input
                                                 type="text"
@@ -43,31 +43,42 @@ export default function Authenticated({ user, header, children }) {
                                         </div>
                                         <div class="flex-grow-2"></div>
                                     </div> */}
-                                    <ul class="flex space-x-2">
+
+                                {/* header */}
+                                <ul class="flex space-x-2 ml-80">
+                                    <NavLink>
                                         <li>
-                                            <a
-                                                href="#"
+                                            <Link
+                                                href={route("dashboard")}
                                                 class="px-4 opacity-100"
                                             >
                                                 Home
-                                            </a>
+                                            </Link>
                                         </li>
+                                    </NavLink>
+                                    <NavLink>
                                         <li>
                                             <a
                                                 href="#"
                                                 class="px-4 opacity-50 hover:opacity-100"
                                             >
-                                                Find Spa
+                                                Spa
                                             </a>
                                         </li>
+                                    </NavLink>
+
+                                    <NavLink>
                                         <li>
                                             <a
                                                 href="#"
                                                 class="px-4 opacity-50 hover:opacity-100"
                                             >
-                                                Find Yoga
+                                                Yoga
                                             </a>
                                         </li>
+                                    </NavLink>
+
+                                    <NavLink>
                                         <li>
                                             <a
                                                 href="#"
@@ -76,6 +87,9 @@ export default function Authenticated({ user, header, children }) {
                                                 Event
                                             </a>
                                         </li>
+                                    </NavLink>
+
+                                    <NavLink>
                                         <li>
                                             <a
                                                 href="#"
@@ -84,6 +98,8 @@ export default function Authenticated({ user, header, children }) {
                                                 Spesialisation
                                             </a>
                                         </li>
+                                    </NavLink>
+                                    <NavLink>
                                         <li>
                                             <a
                                                 href="#"
@@ -92,8 +108,8 @@ export default function Authenticated({ user, header, children }) {
                                                 Voucher
                                             </a>
                                         </li>
-                                    </ul>
-                                </NavLink>
+                                    </NavLink>
+                                </ul>
                             </div>
                         </div>
 

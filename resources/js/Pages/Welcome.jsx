@@ -116,17 +116,18 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                 <div className="max-w-lg flex justify-center mx-auto">
                                     <div className="text-center">
                                         <p className="text-xl opacity-80 leading-snug">
-                                            Pursue your passion with online
-                                            classes taught by award - winning
-                                            chefs, writers, and performers.
-                                            Lorem, ipsum dolor sit amet
-                                            consectetur adipisicing elit. Eum
-                                            mollitia, ut porro perferendis,
-                                            fugiat pariatur iusto ea repudiandae
-                                            officia iste quaerat possimus dolore
-                                            vero magnam placeat quam eligendi id
-                                            temporibus. Lorem ipsum dolor sit
-                                            amet consectetur adipisicing elit.
+                                            Project Vitalife adalah project
+                                            pengembangan aplikasi mobile
+                                            "Vitalife" yang bertujuan untuk
+                                            meningkatkan wisata kesehatan dan
+                                            kebugaran di Indonesia. Aplikasi ini
+                                            akan membantu pengguna dalam
+                                            menemukan pusat yoga dan spa
+                                            terbaik, acara olahraga dan event
+                                            terbaru, berkonsultasi dengan
+                                            dokter, melacak perkembangan mereka,
+                                            dan mendapatkan umpan balik tentang
+                                            layanan aplikasi.
                                         </p>
                                         {/* <form className="w-full flex justify-center items-center rounded-xl overflow-hidden mx-auto mt-12">
                                             <input
