@@ -1,8 +1,86 @@
+import React, { useState, useEffect } from "react";
 import { Link, Head } from "@inertiajs/react";
 import Footers from "@/Layouts/Footers";
 import ApplicationLogo from "@/Components/ApplicationLogo";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
+    const [cards, setCards] = useState([
+        {
+            id: 1,
+            image: "https://cdn.easyfrontend.com/pictures/featured/featured_10_1.png",
+            title: "Technology",
+            courses: 17,
+        },
+        {
+            id: 2,
+            image: "https://cdn.easyfrontend.com/pictures/featured/featured_10_2.png",
+            title: "Marketing",
+            courses: 22,
+        },
+        {
+            id: 3,
+            image: "https://cdn.easyfrontend.com/pictures/featured/featured_10_4.png",
+            title: "Designing",
+            courses: 9,
+        },
+        {
+            id: 4,
+            image: "https://cdn.easyfrontend.com/pictures/featured/featured_10_2.png",
+            title: "nomor2",
+            courses: 22,
+        },
+        {
+            id: 5,
+            image: "https://cdn.easyfrontend.com/pictures/featured/featured_10_1.png",
+            title: "nomor3",
+            courses: 17,
+        },
+        {
+            id: 6,
+            image: "https://cdn.easyfrontend.com/pictures/featured/featured_10_4.png",
+            title: "nomor4",
+            courses: 9,
+        },
+        {
+            id: 7,
+            image: "https://cdn.easyfrontend.com/pictures/featured/featured_10_2.png",
+            title: "nomor5",
+            courses: 22,
+        },
+        {
+            id: 8,
+            image: "https://cdn.easyfrontend.com/pictures/featured/featured_10_1.png",
+            title: "nomor6",
+            courses: 17,
+        },
+        {
+            id: 9,
+            image: "https://cdn.easyfrontend.com/pictures/featured/featured_10_4.png",
+            title: "nomor7",
+            courses: 9,
+        },
+        {
+            id: 10,
+            image: "https://cdn.easyfrontend.com/pictures/featured/featured_10_2.png",
+            title: "nomor8",
+            courses: 22,
+        },
+    ]);
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            if (currentIndex === cards.length - 1) {
+                setCurrentIndex(0); // reset to first card
+            } else {
+                setCurrentIndex(currentIndex + 1);
+            }
+        }, 3000); // change every 3 seconds
+
+        return () => clearInterval(intervalId);
+    }, [cards, currentIndex]);
+
     const handleImageError = () => {
         document
             .getElementById("screenshot-container")
@@ -150,112 +228,38 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 <div className="container px-4 mx-auto mb-24 mt-12 md:mt-14">
                     <div className="z-10 relative mt-12">
                         <div className="grid grid-cols-6 gap-x-6">
-                            {/* card item */}
-                            <div className="col-span-6 md:col-span-2">
-                                <div className="rounded-lg overflow-hidden mt-6 lg:mt-0">
-                                    <div className="relative">
-                                        <img
-                                            src="https://cdn.easyfrontend.com/pictures/featured/featured_10_1.png"
-                                            alt=""
-                                            className="w-full"
-                                        />
-                                        <div className="absolute bottom-0 flex flex-col justify-center items-center w-full text-white px-12 pb-6 text-center">
-                                            <h4 className="text-[22px] leading-none font-medium mb-0">
-                                                Technology
-                                            </h4>
-                                            <p className="opacity-75 mb-4">
-                                                17 courses
-                                            </p>
-                                            <a
-                                                href="#"
-                                                className="bg-blue-600 hover:bg-opacity-90 text-white py-3 rounded duration-300 px-9 mb-3"
-                                            >
-                                                View All
-                                            </a>
+                            {cards
+                                .slice(currentIndex, currentIndex + 3)
+                                .map((card) => (
+                                    <div
+                                        key={card.id}
+                                        className="col-span-6 md:col-span-2 transition duration-500 ease-in-out"
+                                    >
+                                        <div className="rounded-lg overflow-hidden mt-6 lg:mt-0">
+                                            <div className="relative">
+                                                <img
+                                                    src={card.image}
+                                                    alt=""
+                                                    className="w-full"
+                                                />
+                                                <div className="absolute bottom-0 flex flex-col justify-center items-center w-full text-white px-12 pb-6 text-center">
+                                                    <h4 className="text-[22px] leading-none font-medium mb-0">
+                                                        {card.title}
+                                                    </h4>
+                                                    <p className="opacity-75 mb-4">
+                                                        {card.courses} courses
+                                                    </p>
+                                                    <a
+                                                        href="#"
+                                                        className="bg-blue-600 hover:bg-opacity-90 text-white py-3 rounded duration-300 px-9 mb-3"
+                                                    >
+                                                        View All
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            {/* card item */}
-                            <div className="col-span-6 md:col-span-2">
-                                <div className="rounded-lg overflow-hidden mt-6 lg:mt-0">
-                                    <div className="relative">
-                                        <img
-                                            src="https://cdn.easyfrontend.com/pictures/featured/featured_10_2.png"
-                                            alt=""
-                                            className="w-full"
-                                        />
-                                        <div className="absolute bottom-0 flex flex-col justify-center items-center w-full text-white px-12 pb-6 text-center">
-                                            <h4 className="text-[22px] leading-none font-medium mb-0">
-                                                Marketing
-                                            </h4>
-                                            <p className="opacity-75 mb-4">
-                                                22 courses
-                                            </p>
-                                            <a
-                                                href="#"
-                                                className="bg-blue-600 hover:bg-opacity-90 text-white py-3 rounded duration-300 px-9 mb-3"
-                                            >
-                                                View All
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* card item */}
-                            <div className="col-span-6 md:col-span-2">
-                                <div className="rounded-lg overflow-hidden mt-6 lg:mt-0">
-                                    <div className="relative">
-                                        <img
-                                            src="https://cdn.easyfrontend.com/pictures/featured/featured_10_4.png"
-                                            alt=""
-                                            className="w-full"
-                                        />
-                                        <div className="absolute bottom-0 flex flex-col justify-center items-center w-full text-white px-12 pb-6 text-center">
-                                            <h4 className="text-[22px] leading-none font-medium mb-0">
-                                                Designing
-                                            </h4>
-                                            <p className="opacity-75 mb-4">
-                                                09 courses
-                                            </p>
-                                            <a
-                                                href="#"
-                                                className="bg-blue-600 hover:bg-opacity-90 text-white py-3 rounded duration-300 px-9 mb-3"
-                                            >
-                                                View All
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* card item */}
-                            <div className="col-span-6 md:col-span-2">
-                                <div className="rounded-lg overflow-hidden mt-6 lg:mt-0">
-                                    <div className="relative">
-                                        <img
-                                            src="https://cdn.easyfrontend.com/pictures/featured/featured_10_2.png"
-                                            alt=""
-                                            className="w-full"
-                                        />
-                                        <div className="absolute bottom-0 flex flex-col justify-center items-center w-full text-white px-12 pb-6 text-center">
-                                            <h4 className="text-[22px] leading-none font-medium mb-0">
-                                                Marketing
-                                            </h4>
-                                            <p className="opacity-75 mb-4">
-                                                22 courses
-                                            </p>
-                                            <a
-                                                href="#"
-                                                className="bg-blue-600 hover:bg-opacity-90 text-white py-3 rounded duration-300 px-9 mb-3"
-                                            >
-                                                View All
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                ))}
                         </div>
 
                         <button className="w-12 h-12 text-[22px] bg-blue-600 bg-opacity-70 hover:bg-opacity-100 text-white rounded-full absolute top-2/4 -left-6 -translate-y-1/2 transition">
