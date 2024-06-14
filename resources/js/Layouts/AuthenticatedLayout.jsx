@@ -15,7 +15,7 @@ export default function Authenticated({ user, header, children }) {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex">
-                            <div className="shrink-0 flex items-center">
+                            <div className="shrink-0 flex items-center mr-auto ml-10">
                                 <Link>
                                     <img
                                         class="h-10 w-25"
@@ -62,33 +62,10 @@ export default function Authenticated({ user, header, children }) {
                                                 href="#"
                                                 class="px-4 opacity-50 hover:opacity-100"
                                             >
-                                                Spa
+                                                Features
                                             </a>
                                         </li>
                                     </NavLink>
-
-                                    <NavLink>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="px-4 opacity-50 hover:opacity-100"
-                                            >
-                                                Yoga
-                                            </a>
-                                        </li>
-                                    </NavLink>
-
-                                    <NavLink>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="px-4 opacity-50 hover:opacity-100"
-                                            >
-                                                Event
-                                            </a>
-                                        </li>
-                                    </NavLink>
-
                                     <NavLink>
                                         <li>
                                             <a
