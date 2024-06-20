@@ -18,7 +18,7 @@ Route::get('/yoga', function () {
 });
 
 Route::get('/spesialis', function () {
-    return Inertia::render('Spesialis');
+    return Inertia::render('Spesialis2');
 });
 
 Route::get('/', function () {

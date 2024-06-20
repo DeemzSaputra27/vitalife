@@ -164,13 +164,13 @@ function Yoga({ auth }) {
                                         <div className="w-16 h-16 rounded-full bg-gray-200 mr-6"></div>
                                         <div>
                                             <h2 className="text-2xl font-bold">
-                                                MANSION SPA JOGJA
+                                                Bilik Yoga JOGJA
                                             </h2>
                                             <p className="text-gray-500 text-lg">
-                                                Relaxation
+                                                Meditation
                                             </p>
                                             <p className="text-gray-500 text-lg">
-                                                16 years experience overall
+                                                21 years experience overall
                                             </p>
                                         </div>
                                     </div>

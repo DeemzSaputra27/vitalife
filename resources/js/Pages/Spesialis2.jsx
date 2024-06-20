@@ -153,73 +153,90 @@ function Spesialis({ auth }) {
                     <div className="font-sans">
                         <div className="container mx-auto py-8 grid grid-cols-2 gap-5">
                             <div>
-                                <h2>Location</h2>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="di-yogyakarta"
-                                        name="location"
-                                        value="D.I Yogyakarta"
-                                    />
-                                    <label htmlFor="di-yogyakarta">
-                                        D.I Yogyakarta
-                                    </label>
-                                    <br />
-                                    <input
-                                        type="radio"
-                                        id="jawa-timur"
-                                        name="location"
-                                        value="Jawa Timur"
-                                    />
-                                    <label htmlFor="jawa-timur">
-                                        Jawa Timur
-                                    </label>
-                                    <br />
-                                    <input
-                                        type="radio"
-                                        id="jawa-tengah"
-                                        name="location"
-                                        value="Jawa Tengah"
-                                    />
-                                    <label htmlFor="jawa-tengah">
-                                        Jawa Tengah
-                                    </label>
-                                    <br />
-                                    <input
-                                        type="radio"
-                                        id="jawa-barat"
-                                        name="location"
-                                        value="Jawa Barat"
-                                    />
-                                    <label htmlFor="jawa-barat">
-                                        Jawa Barat
-                                    </label>
-                                    <br />
-                                    <input
-                                        type="radio"
-                                        id="jakarta"
-                                        name="location"
-                                        value="Jakarta"
-                                    />
-                                    <label htmlFor="jakarta">Jakarta</label>
-                                    <br />
-                                    <input
-                                        type="radio"
-                                        id="bandung"
-                                        name="location"
-                                        value="Bandung"
-                                    />
-                                    <label htmlFor="bandung">Bandung</label>
-                                    <br />
-                                    <input
-                                        type="radio"
-                                        id="bali"
-                                        name="location"
-                                        value="Bali"
-                                    />
-                                    <label htmlFor="bali">Bali</label>
+                                <h2 className="font-bold mb-4">Location</h2>
+                                <div className="space-y-2">
+                                    <div className="flex items-center">
+                                        <input
+                                            type="radio"
+                                            id="di-yogyakarta"
+                                            name="location"
+                                            value="D.I Yogyakarta"
+                                            className="mr-2"
+                                        />
+                                        <label htmlFor="di-yogyakarta">
+                                            D.I Yogyakarta
+                                        </label>
+                                    </div>
+                                    <div className="flex items-center">
+                                        <input
+                                            type="radio"
+                                            id="jawa-timur"
+                                            name="location"
+                                            value="Jawa Timur"
+                                            className="mr-2"
+                                        />
+                                        <label htmlFor="jawa-timur">
+                                            Jawa Timur
+                                        </label>
+                                    </div>
+                                    <div className="flex items-center">
+                                        <input
+                                            type="radio"
+                                            id="jawa-tengah"
+                                            name="location"
+                                            value="Jawa Tengah"
+                                            className="mr-2"
+                                        />
+                                        <label htmlFor="jawa-tengah">
+                                            Jawa Tengah
+                                        </label>
+                                    </div>
+                                    <div className="flex items-center">
+                                        <input
+                                            type="radio"
+                                            id="jawa-barat"
+                                            name="location"
+                                            value="Jawa Barat"
+                                            className="mr-2"
+                                        />
+                                        <label htmlFor="jawa-barat">
+                                            Jawa Barat
+                                        </label>
+                                    </div>
+                                    <div className="flex items-center">
+                                        <input
+                                            type="radio"
+                                            id="jakarta"
+                                            name="location"
+                                            value="Jakarta"
+                                            className="mr-2"
+                                        />
+                                        <label htmlFor="jakarta">Jakarta</label>
+                                    </div>
+                                    <div className="flex items-center">
+                                        <input
+                                            type="radio"
+                                            id="bandung"
+                                            name="location"
+                                            value="Bandung"
+                                            className="mr-2"
+                                        />
+                                        <label htmlFor="bandung">Bandung</label>
+                                    </div>
+                                    <div className="flex items-center">
+                                        <input
+                                            type="radio"
+                                            id="bali"
+                                            name="location"
+                                            value="Bali"
+                                            className="mr-2"
+                                        />
+                                        <label htmlFor="bali">Bali</label>
+                                    </div>
                                 </div>
-                                <p>Show more</p>
+                                <p className="mt-4 text-blue-500 hover:text-blue-700 cursor-pointer">
+                                    Show more
+                                </p>
                             </div>
                             <motion.div
                                 className="bg-white rounded-lg shadow-2xl p-12"
