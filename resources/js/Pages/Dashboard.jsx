@@ -29,7 +29,7 @@ function Dashboard({ auth }) {
     return (
         <AuthenticatedLayout user={auth.user}>
             <Head title="Dashboard" />
-            <main>
+            <main className="bg-[#E7F0FF]">
                 <div className="bg-biru mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 pb-0">
                     <div className="pt-5">
                         <div className="container px-3 mx-auto flex flex-wrap items-center">

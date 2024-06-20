@@ -53,10 +53,10 @@ function Spesialis({ auth }) {
     return (
         <AuthenticatedLayout user={auth.user}>
             <Head title="Spesialis" />
-            <main className="mt-16">
+            <main className="mt-5">
                 <div className="bg-gray flex justify-center items-center">
                     <motion.div
-                        className="bg-gray-100 rounded-2xl shadow-lg w-full max-w-4xl p-8"
+                        className="bg-gray-100 rounded-2xl shadow-lg w-full max-w-5xl p-8"
                         initial="hidden"
                         animate={animationController}
                         variants={variants}
@@ -151,214 +151,169 @@ function Spesialis({ auth }) {
                 </div>
                 <div className="flex justify-center items-center">
                     <div className="font-sans">
-                        <div className="container mx-auto py-8 grid grid-cols-2 gap-5">
-                            <div>
-                                <h2 className="font-bold mb-4">Location</h2>
-                                <div className="space-y-2">
-                                    <div className="flex items-center">
+                        <div className="container mx-auto py-8 grid grid-cols-[1fr,2fr] gap-5">
+                            {/* Location section */}
+                            <div class="space-y-2 bg-white border rounded-lg p-4 mx-2 w-80">
+                                <h2 class="font-bold mb-4">Location</h2>
+                                <div>
+                                    <div class="flex items-center">
                                         <input
                                             type="radio"
                                             id="di-yogyakarta"
                                             name="location"
                                             value="D.I Yogyakarta"
-                                            className="mr-2"
+                                            class="mr-2"
                                         />
-                                        <label htmlFor="di-yogyakarta">
+                                        <label for="di-yogyakarta">
                                             D.I Yogyakarta
                                         </label>
                                     </div>
-                                    <div className="flex items-center">
+                                    <div class="flex items-center">
                                         <input
                                             type="radio"
                                             id="jawa-timur"
                                             name="location"
                                             value="Jawa Timur"
-                                            className="mr-2"
+                                            class="mr-2"
                                         />
-                                        <label htmlFor="jawa-timur">
+                                        <label for="jawa-timur">
                                             Jawa Timur
                                         </label>
                                     </div>
-                                    <div className="flex items-center">
+                                    <div class="flex items-center">
                                         <input
                                             type="radio"
                                             id="jawa-tengah"
                                             name="location"
                                             value="Jawa Tengah"
-                                            className="mr-2"
+                                            class="mr-2"
                                         />
-                                        <label htmlFor="jawa-tengah">
+                                        <label for="jawa-tengah">
                                             Jawa Tengah
                                         </label>
                                     </div>
-                                    <div className="flex items-center">
+                                    <div class="flex items-center">
                                         <input
                                             type="radio"
                                             id="jawa-barat"
                                             name="location"
                                             value="Jawa Barat"
-                                            className="mr-2"
+                                            class="mr-2"
                                         />
-                                        <label htmlFor="jawa-barat">
+                                        <label for="jawa-barat">
                                             Jawa Barat
                                         </label>
                                     </div>
-                                    <div className="flex items-center">
+                                    <div class="flex items-center">
                                         <input
                                             type="radio"
                                             id="jakarta"
                                             name="location"
                                             value="Jakarta"
-                                            className="mr-2"
+                                            class="mr-2"
                                         />
-                                        <label htmlFor="jakarta">Jakarta</label>
+                                        <label for="jakarta">Jakarta</label>
                                     </div>
-                                    <div className="flex items-center">
+                                    <div class="flex items-center">
                                         <input
                                             type="radio"
                                             id="bandung"
                                             name="location"
                                             value="Bandung"
-                                            className="mr-2"
+                                            class="mr-2"
                                         />
-                                        <label htmlFor="bandung">Bandung</label>
+                                        <label for="bandung">Bandung</label>
                                     </div>
-                                    <div className="flex items-center">
+                                    <div class="flex items-center">
                                         <input
                                             type="radio"
                                             id="bali"
                                             name="location"
                                             value="Bali"
-                                            className="mr-2"
+                                            class="mr-2"
                                         />
-                                        <label htmlFor="bali">Bali</label>
+                                        <label for="bali">Bali</label>
                                     </div>
                                 </div>
-                                <p className="mt-4 text-blue-500 hover:text-blue-700 cursor-pointer">
+                                <p class="mt-4 text-blue-500 hover:text-blue-700 cursor-pointer">
                                     Show more
                                 </p>
                             </div>
+                            {/* Specialist section */}
                             <motion.div
-                                className="bg-white rounded-lg shadow-2xl p-12"
+                                className="bg-white rounded-lg shadow-2xl p-12 grid grid-cols-1 gap-8 w-full"
                                 variants={variants}
                                 initial="hidden"
                                 animate={animationController}
                             >
-                                {/* spa1 */}
-                                <div className="flex" onClick={handleBookClick}>
+                                {/* Specialist 1 */}
+                                <div className="bg-white rounded-lg shadow-2xl p-6">
                                     <div className="flex items-center">
-                                        <div className="w-16 h-16 rounded-full bg-gray-200 mr-6"></div>
+                                        <div className="w-16 h-16 rounded-full bg-gray-200 mr-6">
+                                            <img
+                                                src="https://picsum.photos/id/237/200/200"
+                                                alt="Profile Picture"
+                                                className="w-full h-full rounded-full object-cover"
+                                            />
+                                        </div>
                                         <div>
-                                            <h2 className="text-2xl font-bold">
-                                                MANSION SPA JOGJA
+                                            <h2 className="text-xl font-bold">
+                                                Endang Soekanti
                                             </h2>
                                             <p className="text-gray-500 text-lg">
-                                                Relaxation
+                                                Psikologi Klinis
                                             </p>
                                             <p className="text-gray-500 text-lg">
-                                                16 years experience overall
+                                                Hospital UGM Yogyakarta
+                                            </p>
+                                            <p className="text-gray-500 text-sm">
+                                                Yogyakarta, Sleman
                                             </p>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className="mt-6 bg-green-100 px-6 py-3 rounded-md inline-flex items-center">
-                                    <svg
-                                        className="w-5 h-5 mr-2 text-green-500"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clipRule="evenodd"
-                                        />
-                                    </svg>
-                                    <span className="text-green-500 font-medium text-lg">
-                                        99% 93 Patient Stories
-                                    </span>
-                                </div>
-                                <div className="mt-6">
-                                    <p className="text-gray-500 text-lg">
-                                        Kec. Gamping, Kabupaten Sleman, DIY
-                                    </p>
-                                    <p className="text-gray-500 text-lg">
-                                        The most famous relaxation spa
-                                    </p>
-                                    <a
-                                        href="#"
-                                        className="text-blue-500 hover:text-blue-700 text-lg"
-                                    >
-                                        more
-                                    </a>
-                                </div>
-                                <div className="mt-6">
-                                    <p className="text-gray-500 text-lg">
-                                        FREE &#8377;500 Consultation fee at
-                                        clinic
-                                    </p>
-                                </div>
-                                <div className="mt-6">
-                                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded text-lg">
-                                        Book FREE Spa Visit
-                                    </button>
-                                </div>
-
-                                {/* Available */}
-                                {showAvailable && (
-                                    <div className="mt-10">
-                                        <h3 className="text-xl font-bold">
-                                            Available Today
-                                        </h3>
-                                        <div className="grid grid-cols-3 gap-6 mt-6">
-                                            <div>
-                                                <p className="text-gray-500 text-lg">
-                                                    Morning
-                                                </p>
-                                                <p className="font-medium text-lg">
-                                                    11:30 AM
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p className="text-gray-500 text-lg">
-                                                    Afternoon
-                                                </p>
-                                                <p className="font-medium text-lg">
-                                                    12:00 PM
-                                                </p>
-                                                <p className="font-medium text-lg">
-                                                    12:30 PM
-                                                </p>
-                                                <p className="font-medium text-lg">
-                                                    01:30 PM
-                                                </p>
-                                                <p className="font-medium text-lg">
-                                                    02:00 PM
-                                                </p>
-                                                <p className="font-medium text-lg">
-                                                    02:30 PM
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p className="text-gray-500 text-lg">
-                                                    Evening
-                                                </p>
-                                                <p className="font-medium text-lg">
-                                                    06:00 PM
-                                                </p>
-                                                <p className="font-medium text-lg">
-                                                    06:30 PM
-                                                </p>
-                                                <p className="font-medium text-lg">
-                                                    07:00 PM
-                                                </p>
-                                                <p className="font-medium text-lg">
-                                                    07:30 PM
-                                                </p>
-                                            </div>
+                                        <div className="ml-auto">
+                                            <p className="text-gray-500 text-lg">
+                                                $11,99
+                                            </p>
+                                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">
+                                                Make promise
+                                            </button>
                                         </div>
                                     </div>
-                                )}
+                                </div>
+                                {/* Specialist 2 */}
+                                <div className="bg-white rounded-lg shadow-2xl p-6">
+                                    <div className="flex items-center">
+                                        <div className="w-16 h-16 rounded-full bg-gray-200 mr-6">
+                                            <img
+                                                src="https://picsum.photos/id/238/200/200"
+                                                alt="Profile Picture"
+                                                className="w-full h-full rounded-full object-cover"
+                                            />
+                                        </div>
+                                        <div>
+                                            <h2 className="text-xl font-bold">
+                                                Endang Soekanti
+                                            </h2>
+                                            <p className="text-gray-500 text-lg">
+                                                Psikologi Klinis
+                                            </p>
+                                            <p className="text-gray-500 text-lg">
+                                                Hospital UGM Yogyakarta
+                                            </p>
+                                            <p className="text-gray-500 text-sm">
+                                                Yogyakarta, Sleman
+                                            </p>
+                                        </div>
+                                        <div className="ml-auto">
+                                            <p className="text-gray-500 text-lg">
+                                                $11,99
+                                            </p>
+                                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">
+                                                Make promise
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </motion.div>
                         </div>
                     </div>

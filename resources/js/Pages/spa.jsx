@@ -53,10 +53,10 @@ function Spa({ auth }) {
     return (
         <AuthenticatedLayout user={auth.user}>
             <Head title="Spa" />
-            <main className="mt-16">
+            <main className="mt-5">
                 <div className="bg-gray flex justify-center items-center">
                     <motion.div
-                        className="bg-gray-100 rounded-2xl shadow-lg w-full max-w-4xl p-8"
+                        className="bg-gray-100 rounded-2xl shadow-lg w-full max-w-4xl p-8" // increase the max-width value
                         initial="hidden"
                         animate={animationController}
                         variants={variants}
