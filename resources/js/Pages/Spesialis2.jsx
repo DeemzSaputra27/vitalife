@@ -53,8 +53,8 @@ function Spesialis({ auth }) {
     return (
         <AuthenticatedLayout user={auth.user}>
             <Head title="Spesialis" />
-            <main className="mt-5">
-                <div className="bg-gray flex justify-center items-center">
+            <main className="mt-5 bg-[#E7F0FF]">
+                <div className=" flex justify-center items-center">
                     <motion.div
                         className="bg-gray-100 rounded-2xl shadow-lg w-full max-w-5xl p-8"
                         initial="hidden"
@@ -150,26 +150,24 @@ function Spesialis({ auth }) {
                     </motion.div>
                 </div>
 
-                <div className="bg-white rounded-lg shadow-md p-6 max-w-md mx-auto">
-                    <div className="flex items-center">
-                        <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
-                            <svg
-                                className="w-6 h-6"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    fillRule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clipRule="evenodd"
-                                />
-                            </svg>
-                        </div>
-                        <h3 className="text-lg font-medium text-gray-800">
-                            Search Results for Sp. Psychology
-                        </h3>
-                    </div>
+                <div className="flex items-center pl-32 pt-8">
+                    {/* <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                        <svg
+                            className="w-6 h-6"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fillRule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clipRule="evenodd"
+                            />
+                        </svg>
+                    </div> */}
+                    <h3 className="text-3xl font-bold  text-gray-800">
+                        Spesialist
+                    </h3>
                 </div>
 
                 <div className="flex justify-center items-center">
@@ -178,6 +176,7 @@ function Spesialis({ auth }) {
                             {/* Location section */}
                             <div class="space-y-4 bg-white border rounded-lg p-8 mx-2 w-80">
                                 <h2 class="font-bold mb-4">Location</h2>
+                                <hr class="w-53/54 border-black mx-auto mb-4" />
                                 <div>
                                     <div class="flex items-center">
                                         <input
@@ -302,6 +301,9 @@ function Spesialis({ auth }) {
                                         </button>
                                     </div>
                                 </div>
+                                <div>
+                                    <hr class="w-53/54 border-black mx-auto mb-4" />
+                                </div>
                                 {/* </div> */}
                                 {/* Specialist 2 */}
                                 {/* <div className="bg-white rounded-lg shadow-2xl p-6"> */}
@@ -336,6 +338,9 @@ function Spesialis({ auth }) {
                                         </button>
                                     </div>
                                 </div>
+                                <div>
+                                    <hr class="w-53/54 border-black mx-auto mb-4" />
+                                </div>
                                 {/* Specialist 3 */}
                                 {/* <div className="bg-white rounded-lg shadow-2xl p-6"> */}
                                 <div className="flex items-center">
@@ -368,6 +373,9 @@ function Spesialis({ auth }) {
                                             Make promise
                                         </button>
                                     </div>
+                                </div>
+                                <div>
+                                    <hr class="w-53/54 border-black mx-auto mb-4" />
                                 </div>
                                 {/* </div> */}
                             </motion.div>
