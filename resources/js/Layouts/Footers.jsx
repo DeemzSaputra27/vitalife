@@ -6,7 +6,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
     return (
         <footer>
-            <section className="ezy__about9 light py-14 justify-center md:py-24 bg-biru dark:text-[#0b1727]">
+            <section className="ezy__about9 light py-14 justify-center md:py-8 bg-biru dark:text-[#0b1727]">
                 <div className="container px-4 flex flex-col md:flex-row items-center gap-4 mb-12 justify-center">
                     <div className="col-span-12 lg:col-span-6 relative">
                         <img

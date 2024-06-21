@@ -30,8 +30,8 @@ function Dashboard({ auth }) {
         <AuthenticatedLayout user={auth.user}>
             <Head title="Dashboard" />
             <main className="bg-[#E7F0FF]">
-                <div className="bg-biru mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 pb-0">
-                    <div className="pt-5">
+                <div className="mx-auto max-w-6xl sm:px-6 lg:px-1 pb-0 mt-5">
+                    <div className="pt-1">
                         <div className="container px-3 mx-auto flex flex-wrap items-center">
                             <div className="flex flex-row items-center">
                                 <motion.div
@@ -163,7 +163,7 @@ function Dashboard({ auth }) {
 
                 <div
                     id="specialisation"
-                    class="bg-biru p-20 text-center flex flex-col items-center"
+                    class="bg-biru p-10 text-center flex flex-col items-center"
                 >
                     <h2 class="text-3xl font-bold mb-8">Specialisation</h2>
                     <div class="grid grid-cols-4 gap-20">
@@ -353,8 +353,8 @@ function Dashboard({ auth }) {
                     </motion.button>
                 </div>
 
-                <section class="ezy__team15 light py-14 md:py-24 bg-white text-zinc-900 dark:text-white z-[1]">
-                    <div class="container px-4 mx-auto">
+                <section class="ezy__team15 light py-2 md:py-5 bg-white text-zinc-900 dark:text-white z-[1]">
+                    <div class="container px-10 mx-auto">
                         <h1 class="text-3xl md:text-[45px] font-bold mb-12">
                             Featured Instructor
                         </h1>

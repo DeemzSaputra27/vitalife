@@ -149,11 +149,34 @@ function Spesialis({ auth }) {
                         </div>
                     </motion.div>
                 </div>
+
+                <div className="bg-white rounded-lg shadow-md p-6 max-w-md mx-auto">
+                    <div className="flex items-center">
+                        <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            <svg
+                                className="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fillRule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clipRule="evenodd"
+                                />
+                            </svg>
+                        </div>
+                        <h3 className="text-lg font-medium text-gray-800">
+                            Search Results for Sp. Psychology
+                        </h3>
+                    </div>
+                </div>
+
                 <div className="flex justify-center items-center">
                     <div className="font-sans">
                         <div className="container mx-auto py-8 grid grid-cols-[1fr,2fr] gap-5">
                             {/* Location section */}
-                            <div class="space-y-2 bg-white border rounded-lg p-4 mx-2 w-80">
+                            <div class="space-y-4 bg-white border rounded-lg p-8 mx-2 w-80">
                                 <h2 class="font-bold mb-4">Location</h2>
                                 <div>
                                     <div class="flex items-center">
@@ -247,73 +270,106 @@ function Spesialis({ auth }) {
                                 animate={animationController}
                             >
                                 {/* Specialist 1 */}
-                                <div className="bg-white rounded-lg shadow-2xl p-6">
-                                    <div className="flex items-center">
-                                        <div className="w-16 h-16 rounded-full bg-gray-200 mr-6">
-                                            <img
-                                                src="https://picsum.photos/id/237/200/200"
-                                                alt="Profile Picture"
-                                                className="w-full h-full rounded-full object-cover"
-                                            />
-                                        </div>
-                                        <div>
-                                            <h2 className="text-xl font-bold">
-                                                Endang Soekanti
-                                            </h2>
-                                            <p className="text-gray-500 text-lg">
-                                                Psikologi Klinis
-                                            </p>
-                                            <p className="text-gray-500 text-lg">
-                                                Hospital UGM Yogyakarta
-                                            </p>
-                                            <p className="text-gray-500 text-sm">
-                                                Yogyakarta, Sleman
-                                            </p>
-                                        </div>
-                                        <div className="ml-auto">
-                                            <p className="text-gray-500 text-lg">
-                                                $11,99
-                                            </p>
-                                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">
-                                                Make promise
-                                            </button>
-                                        </div>
+                                {/* <div className="bg-white rounded-lg shadow-2xl p-6"> */}
+                                <div className="flex items-center">
+                                    <div className="w-16 h-16 rounded-full bg-gray-200 mr-6">
+                                        <img
+                                            src="https://picsum.photos/id/237/200/200"
+                                            alt="Profile Picture"
+                                            className="w-full h-full rounded-full object-cover"
+                                        />
+                                    </div>
+                                    <div>
+                                        <h2 className="text-xl font-bold">
+                                            Endang Soekanti
+                                        </h2>
+                                        <p className="text-gray-500 text-lg">
+                                            Psikologi Klinis
+                                        </p>
+                                        <p className="text-gray-500 text-lg">
+                                            Hospital UGM Yogyakarta
+                                        </p>
+                                        <p className="text-gray-500 text-sm">
+                                            Yogyakarta, Sleman
+                                        </p>
+                                    </div>
+                                    <div className="ml-auto">
+                                        <p className="text-gray-500 text-lg">
+                                            $11,99
+                                        </p>
+                                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">
+                                            Make promise
+                                        </button>
                                     </div>
                                 </div>
+                                {/* </div> */}
                                 {/* Specialist 2 */}
-                                <div className="bg-white rounded-lg shadow-2xl p-6">
-                                    <div className="flex items-center">
-                                        <div className="w-16 h-16 rounded-full bg-gray-200 mr-6">
-                                            <img
-                                                src="https://picsum.photos/id/238/200/200"
-                                                alt="Profile Picture"
-                                                className="w-full h-full rounded-full object-cover"
-                                            />
-                                        </div>
-                                        <div>
-                                            <h2 className="text-xl font-bold">
-                                                Endang Soekanti
-                                            </h2>
-                                            <p className="text-gray-500 text-lg">
-                                                Psikologi Klinis
-                                            </p>
-                                            <p className="text-gray-500 text-lg">
-                                                Hospital UGM Yogyakarta
-                                            </p>
-                                            <p className="text-gray-500 text-sm">
-                                                Yogyakarta, Sleman
-                                            </p>
-                                        </div>
-                                        <div className="ml-auto">
-                                            <p className="text-gray-500 text-lg">
-                                                $11,99
-                                            </p>
-                                            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">
-                                                Make promise
-                                            </button>
-                                        </div>
+                                {/* <div className="bg-white rounded-lg shadow-2xl p-6"> */}
+                                <div className="flex items-center">
+                                    <div className="w-16 h-16 rounded-full mr-6">
+                                        <img
+                                            src="../image/dokter1.png"
+                                            alt="Profile Picture"
+                                            className="w-full h-full rounded-full object-cover"
+                                        />
+                                    </div>
+                                    <div>
+                                        <h2 className="text-xl font-bold">
+                                            Endang Soekanti
+                                        </h2>
+                                        <p className="text-gray-500 text-lg">
+                                            Psikologi Klinis
+                                        </p>
+                                        <p className="text-gray-500 text-lg">
+                                            Hospital UGM Yogyakarta
+                                        </p>
+                                        <p className="text-gray-500 text-sm">
+                                            Yogyakarta, Sleman
+                                        </p>
+                                    </div>
+                                    <div className="ml-auto">
+                                        <p className="text-gray-500 text-lg">
+                                            $11,99
+                                        </p>
+                                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">
+                                            Make promise
+                                        </button>
                                     </div>
                                 </div>
+                                {/* Specialist 3 */}
+                                {/* <div className="bg-white rounded-lg shadow-2xl p-6"> */}
+                                <div className="flex items-center">
+                                    <div className="w-16 h-16 rounded-full bg-gray-200 mr-6">
+                                        <img
+                                            src="https://picsum.photos/id/237/200/200"
+                                            alt="Profile Picture"
+                                            className="w-full h-full rounded-full object-cover"
+                                        />
+                                    </div>
+                                    <div>
+                                        <h2 className="text-xl font-bold">
+                                            Endang Soekanti
+                                        </h2>
+                                        <p className="text-gray-500 text-lg">
+                                            Psikologi Klinis
+                                        </p>
+                                        <p className="text-gray-500 text-lg">
+                                            Hospital UGM Yogyakarta
+                                        </p>
+                                        <p className="text-gray-500 text-sm">
+                                            Yogyakarta, Sleman
+                                        </p>
+                                    </div>
+                                    <div className="ml-auto">
+                                        <p className="text-gray-500 text-lg">
+                                            $11,99
+                                        </p>
+                                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">
+                                            Make promise
+                                        </button>
+                                    </div>
+                                </div>
+                                {/* </div> */}
                             </motion.div>
                         </div>
                     </div>
