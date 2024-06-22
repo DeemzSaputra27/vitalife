@@ -193,68 +193,46 @@ function Spesialis({ auth }) {
                                     <div class="flex items-center">
                                         <input
                                             type="radio"
-                                            id="jawa-timur"
+                                            id="sleman"
                                             name="location"
-                                            value="Jawa Timur"
+                                            value="Sleman"
                                             class="mr-2"
                                         />
-                                        <label for="jawa-timur">
-                                            Jawa Timur
-                                        </label>
+                                        <label for="sleman">Sleman</label>
                                     </div>
                                     <div class="flex items-center">
                                         <input
                                             type="radio"
-                                            id="jawa-tengah"
+                                            id="bantul"
                                             name="location"
-                                            value="Jawa Tengah"
+                                            value="Bantul"
                                             class="mr-2"
                                         />
-                                        <label for="jawa-tengah">
-                                            Jawa Tengah
-                                        </label>
+                                        <label for="bantul">Bantul</label>
                                     </div>
                                     <div class="flex items-center">
                                         <input
                                             type="radio"
-                                            id="jawa-barat"
+                                            id="kulon-progo"
                                             name="location"
-                                            value="Jawa Barat"
+                                            value="Kulon Progo"
                                             class="mr-2"
                                         />
                                         <label for="jawa-barat">
-                                            Jawa Barat
+                                            Kulon Progo
                                         </label>
                                     </div>
                                     <div class="flex items-center">
                                         <input
                                             type="radio"
-                                            id="jakarta"
+                                            id="Gunung Kidul"
                                             name="location"
-                                            value="Jakarta"
+                                            value="Gunung Kidul"
                                             class="mr-2"
                                         />
-                                        <label for="jakarta">Jakarta</label>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <input
-                                            type="radio"
-                                            id="bandung"
-                                            name="location"
-                                            value="Bandung"
-                                            class="mr-2"
-                                        />
-                                        <label for="bandung">Bandung</label>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <input
-                                            type="radio"
-                                            id="bali"
-                                            name="location"
-                                            value="Bali"
-                                            class="mr-2"
-                                        />
-                                        <label for="bali">Bali</label>
+                                        <label for="Gunung Kidul">
+                                            Gunung Kidul
+                                        </label>
                                     </div>
                                 </div>
                                 <p class="mt-4 text-blue-500 hover:text-blue-700 cursor-pointer">
