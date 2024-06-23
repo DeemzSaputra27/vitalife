@@ -356,14 +356,14 @@ function Dashboard({ auth }) {
                         <div className="relative">
                             <div className="grid grid-cols-6 mt-12 gap-6">
                                 <div className="col-span-6 md:col-span-3 lg:col-span-2">
-                                    <div className="rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
-                                        <div className="relative">
-                                            <img
-                                                className="w-full rounded-t-xl"
-                                                src="../image/banner1.jpg"
-                                                alt=""
-                                            />
-                                        </div>
+                                    <div className="relative">
+                                        <img
+                                            className="w-full rounded-xl"
+                                            src="../image/banner1.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    {/* <div className="rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
                                         <div className="flex p-4 md:p-6 mb-4">
                                             <div className="w-1/2 px-4 border-dashed border-r border-black dark:border-white text-end">
                                                 <h5 className="text-xl font-medium mb-1">
@@ -382,140 +382,36 @@ function Dashboard({ auth }) {
                                                 </p>
                                             </div>
                                         </div>
+                                    </div> */}
+                                </div>
+
+                                <div className="col-span-6 md:col-span-3 lg:col-span-2">
+                                    <div className="relative">
+                                        <img
+                                            className="w-full rounded-t-xl"
+                                            src="../image/banner2.jpg"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
 
                                 <div className="col-span-6 md:col-span-3 lg:col-span-2">
-                                    <div className="rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
-                                        <div className="relative">
-                                            <img
-                                                className="w-full rounded-t-xl"
-                                                src="../image/banner2.jpg"
-                                                alt=""
-                                            />
-                                            <div className="absolute bottom-7 w-full flex flex-col justify-center items-center z-10 text-white">
-                                                <h4 className="text-2xl font-bold mb-2">
-                                                    Alex Hales
-                                                </h4>
-                                                <p className="mb-2">
-                                                    The light creature divide
-                                                    him.
-                                                </p>
-                                                <a
-                                                    href="#"
-                                                    className="px-5 py-2 bg-blue-600 text-white hover:bg-opacity-90 rounded-md mt-4"
-                                                >
-                                                    View Details
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="flex p-4 md:p-6 mb-4">
-                                            <div className="w-1/2 px-4 border-dashed border-r border-black dark:border-white text-end">
-                                                <h5 className="text-xl font-medium mb-1">
-                                                    17 + Classes
-                                                </h5>
-                                                <p className="">
-                                                    From The masters
-                                                </p>
-                                            </div>
-                                            <div className="w-1/2 px-4">
-                                                <h5 className="text-xl font-medium mb-1">
-                                                    27 Lessons
-                                                </h5>
-                                                <p className="">
-                                                    Average Per Class
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-span-6 md:col-span-3 lg:col-span-2">
-                                    <div className="rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
-                                        <div className="relative">
-                                            <img
-                                                className="w-full rounded-t-xl"
-                                                src="../image/banner3.jpg"
-                                                alt=""
-                                            />
-                                            <div className="absolute bottom-7 w-full flex flex-col justify-center items-center z-10 text-white">
-                                                <h4 className="text-2xl font-bold mb-2">
-                                                    Elecya Perry
-                                                </h4>
-                                                <p className="mb-2">
-                                                    Voluptas Possi numquam id
-                                                    ipsum.
-                                                </p>
-                                                <a
-                                                    href="#"
-                                                    className="px-5 py-2 bg-blue-600 text-white hover:bg-opacity-90 rounded-md mt-4"
-                                                >
-                                                    View Details
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="flex p-4 md:p-6 mb-4">
-                                            <div className="w-1/2 px-4border-dashed border-r border-black dark:border-white text-end">
-                                                <h5 className="text-xlfont-medium mb-1">
-                                                    19 + Classes
-                                                </h5>
-                                                <p className="">
-                                                    From The masters
-                                                </p>
-                                            </div>
-                                            <div className="w-1/2 px-4">
-                                                <h5 className="text-xl font-medium mb-1">
-                                                    31 Lessons
-                                                </h5>
-                                                <p className="">
-                                                    Average Per Class
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div className="relative">
+                                        <img
+                                            className="w-full rounded-t-xl"
+                                            src="../image/banner3.jpg"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
 
                                 <div className="col-span-6 md:col-span-3 lg:col-span-2 hidden">
-                                    <div className="rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
-                                        <div className="relative">
-                                            <img
-                                                className="w-full rounded-t-xl"
-                                                src="../image/banner4.jpg"
-                                                alt=""
-                                            />
-                                            <div className="absolute bottom-7 w-full flex flex-col justify-center items-center z-10 text-white">
-                                                <h4 className="text-2xl font-bold mb-2">
-                                                    John Doe
-                                                </h4>
-                                                <p className="mb-2">
-                                                    Lorem ipsum dolor sit amet.
-                                                </p>
-                                                <a
-                                                    href="#"
-                                                    className="px-5 py-2 bg-blue-600 text-white hover:bg-opacity-90 rounded-md mt-4"
-                                                >
-                                                    View Details
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="flex p-4 md:p-6 mb-4">
-                                            <div className="w-1/2 px-4 border-dashed border-r border-black dark:border-white text-end">
-                                                <h5 className="text-xl font-medium mb-1">
-                                                    25 + Classes
-                                                </h5>
-                                                <p className="">
-                                                    From The masters
-                                                </p>
-                                            </div>
-                                            <div className="w-1/2 px-4">
-                                                <h5 className="text-xl font-medium mb-1">
-                                                    35 Lessons
-                                                </h5>
-                                                <p className="">
-                                                    Average Per Class
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div className="relative">
+                                        <img
+                                            className="w-full rounded-t-xl"
+                                            src="../image/banner4.jpg"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
 
