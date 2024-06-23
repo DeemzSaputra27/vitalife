@@ -86,7 +86,6 @@ function Dashboard({ auth }) {
                         </div>
                     </div>
                 </div>
-
                 <div class="bg-white rounded-xl shadow-md p-7 text-center flex flex-col items-center">
                     <h2 class="text-4xl font-bold mb-8">Wellness Support</h2>
                     <div class="flex space-x-20">
@@ -160,7 +159,6 @@ function Dashboard({ auth }) {
                         </motion.button>
                     </div>
                 </div>
-
                 <div
                     id="specialisation"
                     class="bg-biru p-10 text-center flex flex-col items-center"
@@ -353,48 +351,33 @@ function Dashboard({ auth }) {
                     </motion.button>
                 </div>
 
-                <section class="ezy__team15 light py-2 md:py-5 bg-white text-zinc-900 dark:text-white z-[1]">
-                    <div class="container px-10 mx-auto">
-                        <h1 class="text-3xl md:text-[45px] font-bold mb-12">
-                            Featured Instructor
-                        </h1>
-                        <div class="relative">
-                            <div class="grid grid-cols-6 mt-12 gap-6">
-                                <div class="col-span-6 md:col-span-3 lg:col-span-2">
-                                    <div class="rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
-                                        <div class="relative">
+                <section className="ezy__team15 light py-2 md:py-5 bg-white text-zinc-900 dark:text-white z-[1]">
+                    <div className="container px-10 mx-auto">
+                        <div className="relative">
+                            <div className="grid grid-cols-6 mt-12 gap-6">
+                                <div className="col-span-6 md:col-span-3 lg:col-span-2">
+                                    <div className="rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
+                                        <div className="relative">
                                             <img
-                                                class="w-full rounded-t-xl"
-                                                src="https://cdn.easyfrontend.com/pictures/users/userM1.jpg"
+                                                className="w-full rounded-t-xl"
+                                                src="../image/banner1.jpg"
                                                 alt=""
                                             />
-                                            <div class="absolute bottom-7 w-full flex flex-col justify-center items-center z-10 text-white">
-                                                <h4 class="text-2xl font-bold mb-2">
-                                                    Alicia Nicolson
-                                                </h4>
-                                                <p class="mb-2">
-                                                    Lorem ipsum dolor sit amet.
-                                                </p>
-                                                <a
-                                                    href="#"
-                                                    class="px-5 py-2 bg-blue-600 text-white hover:bg-opacity-90 rounded-md mt-4"
-                                                >
-                                                    View Details
-                                                </a>
-                                            </div>
                                         </div>
-                                        <div class="flex p-4 md:p-6 mb-4">
-                                            <div class="w-1/2 px-4 border-dashed border-r border-black dark:border-white text-end">
-                                                <h5 class="text-xl font-medium mb-1">
+                                        <div className="flex p-4 md:p-6 mb-4">
+                                            <div className="w-1/2 px-4 border-dashed border-r border-black dark:border-white text-end">
+                                                <h5 className="text-xl font-medium mb-1">
                                                     85 + Classes
                                                 </h5>
-                                                <p class="">From The masters</p>
+                                                <p className="">
+                                                    From The masters
+                                                </p>
                                             </div>
-                                            <div class="w-1/2 px-4">
-                                                <h5 class="text-xl font-medium mb-1">
+                                            <div className="w-1/2 px-4">
+                                                <h5 className="text-xl font-medium mb-1">
                                                     20 Lessons
                                                 </h5>
-                                                <p class="">
+                                                <p className="">
                                                     Average Per Class
                                                 </p>
                                             </div>
@@ -402,42 +385,44 @@ function Dashboard({ auth }) {
                                     </div>
                                 </div>
 
-                                <div class="col-span-6 md:col-span-3 lg:col-span-2">
-                                    <div class="rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
-                                        <div class="relative">
+                                <div className="col-span-6 md:col-span-3 lg:col-span-2">
+                                    <div className="rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
+                                        <div className="relative">
                                             <img
-                                                class="w-full rounded-t-xl"
-                                                src="https://cdn.easyfrontend.com/pictures/users/userM16.jpg"
+                                                className="w-full rounded-t-xl"
+                                                src="../image/banner2.jpg"
                                                 alt=""
                                             />
-                                            <div class="absolute bottom-7 w-full flex flex-col justify-center items-center z-10 text-white">
-                                                <h4 class="text-2xl font-bold mb-2">
+                                            <div className="absolute bottom-7 w-full flex flex-col justify-center items-center z-10 text-white">
+                                                <h4 className="text-2xl font-bold mb-2">
                                                     Alex Hales
                                                 </h4>
-                                                <p class="mb-2">
+                                                <p className="mb-2">
                                                     The light creature divide
                                                     him.
                                                 </p>
                                                 <a
                                                     href="#"
-                                                    class="px-5 py-2 bg-blue-600 text-white hover:bg-opacity-90 rounded-md mt-4"
+                                                    className="px-5 py-2 bg-blue-600 text-white hover:bg-opacity-90 rounded-md mt-4"
                                                 >
                                                     View Details
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="flex p-4 md:p-6 mb-4">
-                                            <div class="w-1/2 px-4 border-dashed border-r border-black dark:border-white text-end">
-                                                <h5 class="text-xl font-medium mb-1">
+                                        <div className="flex p-4 md:p-6 mb-4">
+                                            <div className="w-1/2 px-4 border-dashed border-r border-black dark:border-white text-end">
+                                                <h5 className="text-xl font-medium mb-1">
                                                     17 + Classes
                                                 </h5>
-                                                <p class="">From The masters</p>
+                                                <p className="">
+                                                    From The masters
+                                                </p>
                                             </div>
-                                            <div class="w-1/2 px-4">
-                                                <h5 class="text-xl font-medium mb-1">
+                                            <div className="w-1/2 px-4">
+                                                <h5 className="text-xl font-medium mb-1">
                                                     27 Lessons
                                                 </h5>
-                                                <p class="">
+                                                <p className="">
                                                     Average Per Class
                                                 </p>
                                             </div>
@@ -445,59 +430,105 @@ function Dashboard({ auth }) {
                                     </div>
                                 </div>
 
-                                <div class="col-span-6 md:col-span-3 lg:col-span-2">
-                                    <div class="rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
-                                        <div class="relative">
+                                <div className="col-span-6 md:col-span-3 lg:col-span-2">
+                                    <div className="rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
+                                        <div className="relative">
                                             <img
-                                                class="w-full rounded-t-xl"
-                                                src="https://cdn.easyfrontend.com/pictures/users/userM22.jpg"
+                                                className="w-full rounded-t-xl"
+                                                src="../image/banner3.jpg"
                                                 alt=""
                                             />
-                                            <div class="absolute bottom-7 w-full flex flex-col justify-center items-center z-10 text-white">
-                                                <h4 class="text-2xl font-bold mb-2">
+                                            <div className="absolute bottom-7 w-full flex flex-col justify-center items-center z-10 text-white">
+                                                <h4 className="text-2xl font-bold mb-2">
                                                     Elecya Perry
                                                 </h4>
-                                                <p class="mb-2">
+                                                <p className="mb-2">
                                                     Voluptas Possi numquam id
                                                     ipsum.
                                                 </p>
                                                 <a
                                                     href="#"
-                                                    class="px-5 py-2 bg-blue-600 text-white hover:bg-opacity-90 rounded-md mt-4"
+                                                    className="px-5 py-2 bg-blue-600 text-white hover:bg-opacity-90 rounded-md mt-4"
                                                 >
                                                     View Details
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="flex p-4 md:p-6 mb-4">
-                                            <div class="w-1/2 px-4 border-dashed border-r border-black dark:border-white text-end">
-                                                <h5 class="text-xl font-medium mb-1">
+                                        <div className="flex p-4 md:p-6 mb-4">
+                                            <div className="w-1/2 px-4border-dashed border-r border-black dark:border-white text-end">
+                                                <h5 className="text-xlfont-medium mb-1">
                                                     19 + Classes
                                                 </h5>
-                                                <p class="">From The masters</p>
+                                                <p className="">
+                                                    From The masters
+                                                </p>
                                             </div>
-                                            <div class="w-1/2 px-4">
-                                                <h5 class="text-xl font-medium mb-1">
+                                            <div className="w-1/2 px-4">
+                                                <h5 className="text-xl font-medium mb-1">
                                                     31 Lessons
                                                 </h5>
-                                                <p class="">
+                                                <p className="">
                                                     Average Per Class
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div className="col-span-6 md:col-span-3 lg:col-span-2 hidden">
+                                    <div className="rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
+                                        <div className="relative">
+                                            <img
+                                                className="w-full rounded-t-xl"
+                                                src="../image/banner4.jpg"
+                                                alt=""
+                                            />
+                                            <div className="absolute bottom-7 w-full flex flex-col justify-center items-center z-10 text-white">
+                                                <h4 className="text-2xl font-bold mb-2">
+                                                    John Doe
+                                                </h4>
+                                                <p className="mb-2">
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                                <a
+                                                    href="#"
+                                                    className="px-5 py-2 bg-blue-600 text-white hover:bg-opacity-90 rounded-md mt-4"
+                                                >
+                                                    View Details
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div className="flex p-4 md:p-6 mb-4">
+                                            <div className="w-1/2 px-4 border-dashed border-r border-black dark:border-white text-end">
+                                                <h5 className="text-xl font-medium mb-1">
+                                                    25 + Classes
+                                                </h5>
+                                                <p className="">
+                                                    From The masters
+                                                </p>
+                                            </div>
+                                            <div className="w-1/2 px-4">
+                                                <h5 className="text-xl font-medium mb-1">
+                                                    35 Lessons
+                                                </h5>
+                                                <p className="">
+                                                    Average Per Class
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button className="absolute top-1/2 -translate-y-1/2 left-0 md:-left-3 text-2xl bg-blue-600 bg-opacity-75 hover:bg-opacity-100 w-12 h-12 flex justify-center items-center rounded-full z-10">
+                                    <i className="fas fa-angle-left"></i>
+                                </button>
+                                <button className="absolute top-1/2 -translate-y-1/2 right-0 md:-right-3 text-2xl bg-blue-600 bg-opacity-75 hover:bg-opacity-100 w-12 h-12 flex justify-center items-center rounded-full z-10">
+                                    <i className="fas fa-angle-right"></i>
+                                </button>
                             </div>
-                            <button class="absolute top-1/2 -translate-y-1/2 left-0 md:-left-3 text-2xl bg-blue-600 bg-opacity-75 hover:bg-opacity-100 w-12 h-12 flex justify-center items-center rounded-full z-10">
-                                <i class="fas fa-angle-left"></i>
-                            </button>
-                            <button class="absolute top-1/2 -translate-y-1/2 right-0 md:-right-3 text-2xl bg-blue-600 bg-opacity-75 hover:bg-opacity-100 w-12 h-12 flex justify-center items-center rounded-full z-10">
-                                <i class="fas fa-angle-right"></i>
-                            </button>
                         </div>
                     </div>
                 </section>
-
                 {/* <section className="ezy__about9 light py-14 md:py-24 bg-biru dark:text-[#0b1727]">
                     <div className="container px-4 flex flex-col md:flex-row items-center gap-4 mb-12">
                         <div className="col-span-12 lg:col-span-6 relative">
@@ -508,7 +539,6 @@ function Dashboard({ auth }) {
                                 style={{ width: "50%" }}
                             />
                         </div> */}
-
                 <Footers />
             </main>
         </AuthenticatedLayout>
