@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\spaCtrl;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -13,7 +14,9 @@ Route::get('/spa', function () {
     return Inertia::render('spa');
 });
 
-Route::get('/yoga', function () {
+// Route::get('/spa', [spaCtrl::class, 'spaTotal'])->name('spa');
+
+Route::get('/yoga', function () { 
     return Inertia::render('yoga');
 });
 

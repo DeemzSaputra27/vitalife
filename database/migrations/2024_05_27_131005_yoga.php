@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nama');
             $table->integer('harga');
             $table->string('alamat');
-            $table->foreign('noHP');
+            $table->string('noHP');
             $table->timestamps();
         });
     }

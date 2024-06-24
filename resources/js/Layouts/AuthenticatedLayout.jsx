@@ -26,24 +26,6 @@ export default function Authenticated({ user, header, children }) {
                             </div>
 
                             <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex justify-end mr-12">
-                                {/* search */}
-                                {/* <div class="flex rounded-full overflow-hidden shadow-sm">
-                                        <div class="relative flex-grow focus-within:z-10">
-                                            <input
-                                                type="text"
-                                                name="price"
-                                                id="price"
-                                                class="block w-full rounded-full border-gray-300 py-1.5 pl-11 pr-6 text-gray-900 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                            />
-                                            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                                                <span class="text-gray-500 sm:text-sm">
-                                                    Search...
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-2"></div>
-                                    </div> */}
-
                                 {/* header */}
                                 <ul class="flex space-x-2 ml-80">
                                     <NavLink>
